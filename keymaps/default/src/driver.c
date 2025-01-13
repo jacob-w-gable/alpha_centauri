@@ -379,7 +379,7 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record)
 
 // Whether to immediately consider a key to be held down when another key is pressed
 // while this key is still down.
-// For layer shift keys, this essentially determins whether we are allowing rolling to
+// For layer shift keys, this essentially determines whether we are allowing rolling to
 // the next layer (`A B ~A ~B` pattern, where A is layer shift and B is on second layer)
 // or if we need to require a full keypress on that layer (`A B ~B ~A` pattern).
 bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record)

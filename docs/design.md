@@ -6,19 +6,19 @@ The design decisions of this keyboard and my keymap are described in detail belo
 
 Why base this keyboard layout on crkbd?
 
-We need to have as many keys accessible as possible. However, hand movements have huge consequences for typing speed. So, we need to include as many keys as possible without needing to move the hands, and nothing more. Generally speaking, this means that each finger should not have to move more than one key in any direction. This describes a 3x6 layout for each hand, with 3 keys for each thumb, similar to crkbd. Adding any more keys than that would involve excessive hand movements, sacrificing efficiency.
+We should have as many keys available as possible. However, hand movements have huge consequences for typing speed. So, we need to include as many keys as possible without needing to move our hands, and nothing more. Generally speaking, this means that each finger should not have to move more than one key in any direction. This describes a 3x6 layout for each hand, with 3 keys for each thumb, similar to crkbd. Adding any more keys than that would involve excessive hand movements, sacrificing efficiency.
 
 However, there is still more that can be refined. Given my hand size, I still have trouble reaching the outer top keys of the crkbd (top-left for the left hand, top-right for the right hand). As a result, I still move my hand quite a bit in order to use those keys. There are two ways around this: either place rarely-used keys in those positions, or remove them altogether. In order to have a consistent design philosophy and to force myself to be more efficient, these keys should be removed altogether. This leaves us with a 40 key layout.
 
-Lastly, the column spacing has been meticulously tailored to work well with my hands.
+Lastly, the column spacing has been meticulously tailored to work well with my hands, as well as the thumb keys.
 
 ## Keymap
 
 So what about the keymap?
 
-After spending several months tweaking my keymap, trying to find the most efficient design, I have come up with a set of rules that I believe are fundamental to a good keymap. These rules are designed to minimize the number of necessary physical keys, without making typing slower or uncomfortable. 
+After spending several months tweaking my keymap and trying to find the most efficient design, I have come up with a set of rules that I believe are fundamental to a good keymap. These rules are designed to minimize the number of necessary physical keys, without making typing slower or uncomfortable. 
 
-What do I mean by that specifically? Imagine a keyboard that only has two keys. In order to use the keyboard, you would effectively have to use Morse code. While this would entirely eliminate hand movements, it actually makes efficiency plummet to nearly nothing, since it's such a huge chore to type even simple letters. On the other hand, a full-sized keyboard makes it easy to produce any keycode, by providing a dedicated physical key. However, efficiency is poor due to large, frequent hand movements. Somewhere, there is a middle ground. But, as the number of physical keys decreases, the more clever you have to be about keymap design - a good design combined with a smaller number of keys increases efficiency, while a poor design combined with a smaller number of keys might actually decrease efficiency. Therefore, a reduction in physical keys naturally requires a good keymap design.
+What do I mean by that specifically? Imagine a keyboard that only has two keys. In order to use the keyboard, you would effectively have to use a modified Morse code. While this would entirely eliminate hand movements, it actually makes efficiency plummet to nearly nothing, since it's such a huge chore to type even simple letters. On the other hand, a full-sized keyboard makes it easy to produce any keycode, by providing a dedicated physical key. However, efficiency is poor due to large, frequent hand movements. Somewhere, there is a middle ground. But, as the number of physical keys decreases, the more clever you have to be about keymap design - a good design combined with a smaller number of keys increases efficiency, while a poor design combined with a smaller number of keys might actually decrease efficiency. Therefore, a reduction in physical keys naturally requires a good keymap design.
 
 ### Observations about the nature of typing
 
@@ -84,14 +84,174 @@ Using the above list of rules, we can design a keymap that is much smaller than 
 - Include all letters on the base layer, and also the standard placement of `;`, `,`, `.`, and `/`.
 - Place space on the right center thumb key
 - Place backspace on the left center thumb key
-- For the combos/layering, we have a few things that we need still for common use: shift, enter, ctrl, alt, tab, not to mention every letter and symbol. What if we had _two_ versions of shift? one for caps, and one to change to letters and symbols?
-  - we can put almost every letter, symbol, and F key in the same layer. Since we have a width of 12 keys, and the bottom layer is the least accessible, put the F keys down there. Since the middle row is the most accessible, put the number keys under `ASDFGHJKL;`. Fill in the rest with symbols. Start by putting `!@#$%^&*` above `12345678`
-  - However, in order to not break the 2-max keypress rule, some keys will be a problem. We can put back tick in the middle left to mirror a normal position. Let's put `+` and `|` above `9` and `0`. We can put `\` on the right middle to mirror its position.
-  - That still leaves a few of the most common characters, which we'll save for later...
-  - The outer middle keys can act as the secondary shift, while the bottom right and bottom left can act as normal shift. Unfortunately, this means you have to hold down the right middle key in order to type back tick, and you have to hold down the left middle key in order to type `\`.
-  - However, since these keys only do something while being held down, we can put other functionality on top. For the left center, we can make a tap trigger tab. For the right center, we can make it a `'`. The bottom right shift can be used as an enter key.
+- For the combos/layering, we have a few things that we need still for common use: shift, enter, ctrl, alt, tab, not to mention every number and symbol. What if we had _two_ versions of shift? one to act as traditional shift, and one to switch to a Layer 2?
+  - we can put almost every number, symbol, and F key in the same layer, which we'll call Layer 2. Since we have a width of 12 keys, and the bottom row is the least accessible, put the F keys down there. Since the middle row is the most accessible, put the number keys under `ASDFGHJKL;`. Then we can put many symbols in the top row. Put `!@#$%^&*+|` above `1234567890`
+  - We can put back tick in the middle row far-left column to mirror a normal position. We can put `\` on the right middle to mirror its position.
+  - That still leaves `-` and `=` and some other keys like `'` and `tab` - but we'll do something else with those.
+  - On Layer 1, the outer middle keys can act as the secondary shift, while the bottom right and bottom left can act as normal shift. Unfortunately, this means you have to hold down the right middle key (activating Layer 2) in order to type back tick, and you have to hold down the left middle key (also activating Layer 2) in order to type `\`.
+  - However, since these keys only do something while being held down, we add other functional for tapping. For the left center On Layer 1, we can make a tap be a `tab`. For the right center, we can make it a `'`. The bottom right shift can be used as an enter key. The left shift could be tapped as well, but I've decided it actually is not necessary.
   - parentheses are extremely common. place them on the outer thumb keys
-  - put `-` on the inner right thumb key. but when held down, make it alt.
-  - put `=` on the inner left thumb key. but when held down, make it ctrl.
-  - lastly, we have brackets. We can place them under the parentheses, but on the symbol layer.
+  - put `-` on the inner right thumb key. but when held down, make it `alt`.
+  - put `=` on the inner left thumb key. but when held down, make it `ctrl`.
+  - lastly, we have brackets and braces. We can place the brackets under the parentheses, but on Layer 2. We can place the brackets under `=` and `-`.
+- Let's put cursor control on a Layer 3. The easiest way to activate layers is with thumb keys, and the easiest thumb keys are the centers. Since the backspace key is not visual, we can use it for dual-functionality without defying design constraints. So, holding down backspace will be used to activate Layer 3.
+  - Ideally, when activating any of these more exotic layers, a second hand shouldn't be required. Since backspace is on the left hand, all of the cursor controls should be on the left keyboard.
+  - Put arrow keys under the most natural fingers: `ESDF`.
+  - Under `W`, put `Home`. Under `R`, put `End`. 
+  - Under `Q`, put `PgUp`. Under `A`, put `PgDn`
+  - I still should be able to access Shift, Ctrl, and Alt, so that I can move the cursor more efficiently. Put shift in the same position as Layer 1 (transparent). Put Ctrl under `Z`. Put Alt under `X`.
+- I've found it useful to put other keys and macros on Layer 3, left keyboard.
+  - Under `C`, I have a macro for `Ctrl + Shift + PgUp` (move tab left). Under `V`, I have a macro for `Ctrl + Shift + PgDn` (move tab right).
+  - Under `T`, I have a macro for `Ctrl + 0` (zoom reset). Under `G`, I have a macro for `Ctrl + +` (zoom in). Under `B`, I have a macro for `Ctrl + -` (zoom out).
+  - Under `tab`, I have `Caps Lock`.
+- On the right side of the keyboard on Layer 3, I have other commonly used keys and macros.
+  - Under `J`, I have `Esc`.
+  - Under `K`, I have `Alt + Space` (KRunner).
+  - Under `L`, I have `Delete`.
+  - Under `;`, I have `~`.
+  - Under `Space`, I have `Ctrl + Backspace` (delete word left).
+  - All other keys except thumb keys on the right keyboard on Layer 3 is Linux Unicode symbols and emojis.
+- Layer 4 is the least-used layer. It primarily includes media controls and QMK settings. I can't activate this one with space, because space is used too frequently, and it's (in a way) visual. It feels laggy to have it used as a layer toggle. Instead, I use the right outside key, `)`, to toggle Layer 4. Much like Layer 3, I should be able to toggle the most important keys with one hand. So, the important keys will be on the right keyboard.
+  - Under `J`, I have volume down. Under `K`, I have volume up. Under `L`, I have mute.
+  - Under `U`, I have previous track. Under `I`, I have play/pause. Under `O`, I have next track.
+  - Under `Y`, I have Screen brightness up. Under `H`, I have Screen brightness down.
+  - The left keyboard has many QMK settings, that I will not cover here.
+- Lastly, on the base layer, we still need the `Super` key somewhere. It normally won't be used unless it's being held down, and it will often be used in combination with some letter. So, it should go on the thumb row, and it will fit in nicely under `(`, the last key key that isn't already used for dual-purpose (aside from Space).
 
+### Keymap visualized
+
+Here is a visual representation of the keymap.
+
+#### Layer 1
+
+```
+      ,-----------------------------.             ,-----------------------------.
+      |  Q  |  W  |  E  |  R  |  T  |             |  Y  |  U  |  I  |  O  |  P  |
+,-----+-----+-----+-----+-----+-----|             |-----+-----+-----+-----+-----+-----.
+| Tab |  A  |  S  |  D  |  F  |  G  |             |  H  |  J  |  K  |  L  |  ;  |  '  |
+|-----+-----+-----+-----+-----+-----|             |-----+-----+-----+-----+-----+-----|
+| Sft |  Z  |  X  |  C  |  V  |  B  |             |  N  |  M  |  ,  |  .  |  /  | S/E |
+`-----------------------+-----+-----+-----. ,-----+-----+-----+-----------------------'
+                        |  (  | Bks |  =  | |  -  | Spc |  )  |
+                        `-----------------' `-----------------'
+```
+
+`Tab`: This also toggles Layer 2.
+`'`: This also toggles Layer 2.
+`Bks`: This also toggles Layer 3.
+`S/E`: This is `Shift` when held, `Enter` when tapped.
+`)`: This also toggles Layer 4.
+`=`: This is `Ctrl` when held, `=` when tapped.
+`-`: This is `Alt` when held, `-` when tapped.
+`(`: This is `(` when tapped, `Super` when held.
+
+#### Layer 2
+
+```
+      ,-----------------------------.             ,-----------------------------.
+      |  !  |  @  |  #  |  $  |  %  |             |  ^  |  &  |  *  |  +  |  |  |
+,-----+-----+-----+-----+-----+-----|             |-----+-----+-----+-----+-----+-----.
+|  `  |  1  |  2  |  3  |  4  |  5  |             |  6  |  7  |  8  |  9  |  0  |  \  |
+|-----+-----+-----+-----+-----+-----|             |-----+-----+-----+-----+-----+-----|
+|  F1 |  F2 |  F3 |  F4 |  F5 |  F6 |             |  F7 |  F8 |  F9 | F10 | F11 | F12 |
+`-----------------------+-----+-----+-----. ,-----+-----+-----+-----------------------'
+                        |  [  |     |  {  | |  }  |     |  ]  |
+                        `-----------------' `-----------------'
+```
+
+#### Layer 3
+
+```
+      ,-----------------------------.             ,-----------------------------.
+      | PgU | Hme |  Up | End |  M1 |             |     |     |     |     |     |
+,-----+-----+-----+-----+-----+-----|             |-----+-----+-----+-----+-----+-----.
+|  CL | PgD | Lft | Dwn | Rgt |  M2 |             |     | Esc |  M7 | Del |  ~  |     |
+|-----+-----+-----+-----+-----+-----|             |-----+-----+-----+-----+-----+-----|
+| Sft | Ctl | Alt |  M4 |  M5 |  M3 |             |     |     |     |     |     |     |
+`-----------------------+-----+-----+-----. ,-----+-----+-----+-----------------------'
+                        |     |     |     | |     |  M6 | ACT |
+                        `-----------------' `-----------------'
+```
+
+`M1`: Zoom reset (Ctrl + 0).
+`M2`: Zoom in (Ctrl + +).
+`M3`: Zoom out (Ctrl + -).
+`M4`: Move tab left (Ctrl + Shift + PgUp).
+`M5`: Move tab right (Ctrl + Shift + PgDn).
+`M6`: Delete word left (Ctrl + Backspace).
+`M7`: KRUnner (Alt + Space).
+`CL`: Caps Lock.
+`~`: Tilde.
+`ACT`: Autocorrect toggle.
+
+#### Layer 4
+
+```
+      ,-----------------------------.             ,-----------------------------.
+      |     |     |     |     |     |             |  BU |  Pt |  PP |  NT |  M1 |
+,-----+-----+-----+-----+-----+-----|             |-----+-----+-----+-----+-----+-----.
+|     |     |     |     |     |     |             |  BD |  VD |  VU |  MU | CAL |     |
+|-----+-----+-----+-----+-----+-----|             |-----+-----+-----+-----+-----+-----|
+|     |     |     |     |     |     |             |     |     |     |     |     |     |
+`-----------------------+-----+-----+-----. ,-----+-----+-----+-----------------------'
+                        |     |     |     | |     |     |     |
+                        `-----------------' `-----------------'
+```
+
+`BU`: Brightness up.
+`BD`: Brightness down.
+`Pt`: Previous track.
+`PP`: Play/pause.
+`NT`: Next track.
+`VD`: Volume down.
+`VU`: Volume up.
+`MU`: Mute.
+`M1`: Terminal (Ctrl + Alt + T).
+`CAL`: Calculator.
+
+## Other QMK Features Used for Typing
+
+There are only a couple of special QMK features that I use for typing. One of them is Caps Word, and the other is autocorrect.
+
+For Caps Word, you hold down both Shift keys to enable it (of course, it disables itself).
+
+For autocorrect, You can see my custom dictionary in the file list. But also, you will notice on Layer 3, that I have a key for toggling autocorrect on/off.
+
+### Tapping Term
+
+Tapping Term is how long it takes for a keypress to be considered "hold" instead of a "tap". Over time, I have found these values to match up with my typing speed quite well:
+
+125 ms:
+- `Tab`/Layer2
+- `'`/Layer2
+
+150 ms:
+- `Bks`/Layer3
+- `=`/`Ctrl`
+- `-`/`Alt`
+
+200 ms:
+- Everything else (default, set by QMK)
+
+### Hold On Other Key Press
+
+Whether to immediately consider a key _A_ be held down when another key _B_ is pressed while key _A_ is still down, instead of having to wait waiting the tapping term or release _B_ before releasing _A_.
+
+For layer shift keys, this essentially determines whether we are allowing rolling to the next layer (`A B ~A ~B` pattern, where A is layer shift and B is on second layer) or if we need to require a full keypress on that layer (`A B ~B ~A` pattern).
+
+For example, say `Tab` is the layer shift key to layer 2, and say I press `[Tab + A + ~Tab + ~A]`, all within the tapping term during fast typing. If Hold On Other Key Press is enabled for `Tab`, then this would output `1`. But if it is disabled, it would type `\ta`, and if I wanted to type `1`, I would have to press the keys like `[Tab + A + ~A + ~Tab]`.
+
+Because having an apostrophe is a common part of many words, I found it better to have HOOKP disabled for `'`. But I've found numbers more common than tab, so I have it enabled for `Tab`.
+
+The summary of what's enabled/disabled:
+
+Enabled:
+- `=`/`Ctrl`
+- `Tab`/Layer2
+- `Shift`/`Enter`
+
+Disabled:
+- `Bks`/Layer3
+- `'`/Layer2
+- `-`/`Alt`
+- Anything else (default)
