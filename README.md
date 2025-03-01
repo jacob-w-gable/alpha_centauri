@@ -6,11 +6,11 @@ The keymap has been designed for comfort and efficiency, prioritizing typing/pro
 
 ## Roadmap
 
-- [-] v0.1 - Fundamental keyboard design
-  - [-] Layout definition
+- [ ] v0.1 - Fundamental keyboard design
+  - [ ] Layout definition
   - [x] Firmware
   - [ ] `.stl` files
-  - [-] Documentation
+  - [ ] Documentation
 - [ ] v0.2 - Encoders
   - [ ] Updated layout definition
   - [ ] Updated firmware
@@ -34,6 +34,6 @@ The keymap has been designed for comfort and efficiency, prioritizing typing/pro
 
 ## Detailed Documentation
 
-- [Building the firmware](docs/building.md)
-- [Keyboard/Keymap Design](docs/design.md)
+- [Building/Flashing the Firmware](https://github.com/jacob-w-gable/alpha_centauri/wiki/Building-and-Flashing)
+- [Design](https://github.com/jacob-w-gable/alpha_centauri/wiki/Design)
 

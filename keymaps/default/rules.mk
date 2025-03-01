@@ -5,7 +5,6 @@ VIA_ENABLE      = no      # Disable VIA
 LTO_ENABLE      = no
 CAPS_WORD_ENABLE = yes
 WPM_ENABLE = yes
-OLED_ENABLE = yes
 AUTOCORRECT_ENABLE = yes
 RGBLIGHT_ENABLE = no
 RGB_MATRIX_ENABLE = yes
