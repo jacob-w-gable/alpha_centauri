@@ -4,7 +4,7 @@ The design decisions of this keyboard and my keymap are described in detail belo
 
 ## Keyboard/layout
 
-Why base this keyboard layout on crkbd?
+Why base this keyboard layout on [crkbd](https://github.com/foostan/crkbd)?
 
 We should have as many keys available as possible. However, hand movements have huge consequences for typing speed. So, we need to include as many keys as possible without needing to move our hands, and nothing more. Generally speaking, this means that each finger should not have to move more than one key in any direction. This describes a 3x6 layout for each hand, with 3 keys for each thumb, similar to crkbd. Adding any more keys than that would involve excessive hand movements, sacrificing efficiency.
 
@@ -136,14 +136,14 @@ Here is a visual representation of the keymap.
                         `-----------------' `-----------------'
 ```
 
-`Tab`: This also toggles Layer 2.
-`'`: This also toggles Layer 2.
-`Bks`: This also toggles Layer 3.
-`S/E`: This is `Shift` when held, `Enter` when tapped.
-`)`: This also toggles Layer 4.
-`=`: This is `Ctrl` when held, `=` when tapped.
-`-`: This is `Alt` when held, `-` when tapped.
-`(`: This is `(` when tapped, `Super` when held.
+* `Tab`: This also toggles Layer 2.
+* `'`: This also toggles Layer 2.
+* `Bks`: This also toggles Layer 3.
+* `S/E`: This is `Shift` when held, `Enter` when tapped.
+* `)`: This also toggles Layer 4.
+* `=`: This is `Ctrl` when held, `=` when tapped.
+* `-`: This is `Alt` when held, `-` when tapped.
+* `(`: This is `(` when tapped, `Super` when held.
 
 #### Layer 2
 
@@ -173,16 +173,16 @@ Here is a visual representation of the keymap.
                         `-----------------' `-----------------'
 ```
 
-`M1`: Zoom reset (Ctrl + 0).
-`M2`: Zoom in (Ctrl + +).
-`M3`: Zoom out (Ctrl + -).
-`M4`: Move tab left (Ctrl + Shift + PgUp).
-`M5`: Move tab right (Ctrl + Shift + PgDn).
-`M6`: Delete word left (Ctrl + Backspace).
-`M7`: KRUnner (Alt + Space).
-`CL`: Caps Lock.
-`~`: Tilde.
-`ACT`: Autocorrect toggle.
+* `M1`: Zoom reset (Ctrl + 0).
+* `M2`: Zoom in (Ctrl + +).
+* `M3`: Zoom out (Ctrl + -).
+* `M4`: Move tab left (Ctrl + Shift + PgUp).
+* `M5`: Move tab right (Ctrl + Shift + PgDn).
+* `M6`: Delete word left (Ctrl + Backspace).
+* `M7`: KRUnner (Alt + Space).
+* `CL`: Caps Lock.
+* `~`: Tilde.
+* `ACT`: Autocorrect toggle.
 
 #### Layer 4
 
@@ -198,26 +198,28 @@ Here is a visual representation of the keymap.
                         `-----------------' `-----------------'
 ```
 
-`BU`: Brightness up.
-`BD`: Brightness down.
-`Pt`: Previous track.
-`PP`: Play/pause.
-`NT`: Next track.
-`VD`: Volume down.
-`VU`: Volume up.
-`MU`: Mute.
-`M1`: Terminal (Ctrl + Alt + T).
-`CAL`: Calculator.
+* `BU`: Brightness up.
+* `BD`: Brightness down.
+* `Pt`: Previous track.
+* `PP`: Play/pause.
+* `NT`: Next track.
+* `VD`: Volume down.
+* `VU`: Volume up.
+* `MU`: Mute.
+* `M1`: Terminal (Ctrl + Alt + T).
+* `CAL`: Calculator.
 
 ## Other QMK Features Used for Typing
 
-There are only a couple of special QMK features that I use for typing. One of them is Caps Word, and the other is autocorrect.
+There are only a couple of special QMK features that I use for typing. One of them is [Caps Word](https://docs.qmk.fm/features/caps_word), and the other is [autocorrect](https://docs.qmk.fm/features/autocorrect).
 
 For Caps Word, you hold down both Shift keys to enable it (of course, it disables itself).
 
 For autocorrect, You can see my custom dictionary in the file list. But also, you will notice on Layer 3, that I have a key for toggling autocorrect on/off.
 
-### Tapping Term
+Another feature I use quite extensively is [Tab-Hold Configuration](https://docs.qmk.fm/tap_hold), which determines what is a key tap and what is a key hold. Configuration involves defining timings and orderings of specific keypresses in such a way that everything feels natural. My setup is described in more detail below.
+
+### [Tapping Term](https://docs.qmk.fm/tap_hold#tapping-term)
 
 Tapping Term is how long it takes for a keypress to be considered "hold" instead of a "tap". Over time, I have found these values to match up with my typing speed quite well:
 
@@ -233,9 +235,9 @@ Tapping Term is how long it takes for a keypress to be considered "hold" instead
 200 ms:
 - Everything else (default, set by QMK)
 
-### Hold On Other Key Press
+### [Hold On Other Key Press](https://docs.qmk.fm/tap_hold#hold-on-other-key-press)
 
-Whether to immediately consider a key _A_ be held down when another key _B_ is pressed while key _A_ is still down, instead of having to wait waiting the tapping term or release _B_ before releasing _A_.
+Whether to immediately consider a key _A_ be held down when another key _B_ is pressed while key _A_ is still down, instead of having to wait the tapping term or release _B_ before releasing _A_.
 
 For layer shift keys, this essentially determines whether we are allowing rolling to the next layer (`A B ~A ~B` pattern, where A is layer shift and B is on second layer) or if we need to require a full keypress on that layer (`A B ~B ~A` pattern).
 
@@ -255,3 +257,13 @@ Disabled:
 - `'`/Layer2
 - `-`/`Alt`
 - Anything else (default)
+
+### [Permissive Hold](https://docs.qmk.fm/tap_hold#permissive-hold)
+
+This is pretty much exactly the same concept as Hold On Other Key Press, but with the additional requirement that _B_ be released before _A_ is released in order to activate _A_'s secondary functionality. So, this describes a `A B ~B ~A` pattern.
+
+For more clarification about these features, the QMK documentation has great [documentation](https://docs.qmk.fm/tap_hold#tap-or-hold-decision-modes) comparing the different modes.
+
+In my configuration, Permissive Hold is enabled for all keys by default, with the exception of the keys that shift to my unicode layers. These keys are `,`, `.`, and `/`. Without Permissive Hold or Hold On Other Key Press enabled, these rely on the user pressing the keys for the entire duration of the tapping term. This prevents accidental layer shifts to layers that I don't use very often. 
+
+Note, that in a Tap-hold configuration, the least-restrictive mode will logistically take precedent. Hold On Other Key Press is less restrictive than Permissive Hold, which is less restrictive than the default Tapping Term. You'll notice that Permissive Hold is effectively enabled for all HOOKP-enabled keys. But since HOOKP is less restrictive that PH, it will take precedent.

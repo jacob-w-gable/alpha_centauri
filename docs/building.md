@@ -61,7 +61,15 @@ That being said, breaking changes are introduced into QMK frequently. If you enc
 
 Lastly, if you know that everything builds correctly, you can flash the firmware using `make flash`. This will build unique firmware for each side of the keyboard, and it will automatically flash both sides. First the left, then the right. By default, it assumes you are using Elite-Pi microcontrollers.
 
-This can be done while actively using the keyboard you're developing for. While the left-side firmware is building, put the left keyboard into flash mode by pressing the reset button twice (assuming rp2040). The firmware will automatically flash itself. Then, while the right-side firmware is building, unplug the left side, plug in the right side, and put the right keyboard into flash mode by pressing the reset button twice. Finally, wait for the right side to flash itself.
+This can be done while actively using the keyboard you're developing for. While the left-side firmware is building, put the left keyboard into flash mode by pressing the reset button twice (assuming rp2040 - this means shorting RUN with GND). The firmware will automatically flash itself. Then, while the right-side firmware is building, unplug the left side, plug in the right side, and put the right keyboard into flash mode by pressing the reset button twice. Finally, wait for the right side to flash itself.
+
+If the keyboard is not automatically detected, you will need to pull out a second keyboard to manually mount it. You will be able to see the device listed in `lsblk`, as `/dev/sdX`, if it's in flash mode. rp2040's will have one single partition, called `/dev/sdX1`, that is 128M. Once you have identified the correct value of `X`, you can mount the device with
+
+```bash
+udiskctl mount -b /dev/sdX1
+```
+
+The qmk flasher will now auto-detect the device and flash the firmware.
 
 ## Important notes
 

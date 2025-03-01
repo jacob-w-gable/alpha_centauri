@@ -399,6 +399,19 @@ bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record)
     }
 }
 
+// Whether to allow a key to be considered held down when another key is pressed
+// and released while this key is still down. (A B ~B ~A pattern).
+bool get_permissive_hold(uint16_t keycode, keyrecord_t *record) {
+  switch (keycode) {
+    case LT(0, KC_SLSH):
+    case LT(0, KC_COMM):
+    case LT(0, KC_DOT):
+      return false;
+    default:
+      return true;
+  }
+}
+
 // Whether haptic feedback is enabled for a keypress
 bool get_haptic_enabled_key(uint16_t keycode, keyrecord_t *record)
 {
