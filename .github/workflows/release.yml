@@ -59,22 +59,26 @@ jobs:
           # Change this whenever updating the QMK version
           git fetch --depth 1 origin 884a808813fe9e5f90aab4079a5944997465161e
           git checkout FETCH_HEAD
+          git submodule update --init --recursive
 
       - name: Install QMK dependencies
         run: |
           sudo apt update
-          sudo apt install -y python3-pip gcc-avr avr-libc dfu-util binutils-arm-none-eabi gcc-arm-none-eabi
-
-      - name: Clone keyboard into QMK keyboards directory
-        run: |
-          cp -r alpha_centauri qmk_firmware/keyboards/
-
-      - name: Set up QMK environment
-        run: |
+          sudo apt-get --quiet --yes install \
+            build-essential clang-format diffutils gcc git unzip wget zip \
+            python3-pip binutils-avr gcc-avr avr-libc binutils-arm-none-eabi \
+            gcc-arm-none-eabi libnewlib-arm-none-eabi avrdude dfu-programmer \
+            dfu-util teensy-loader-cli libhidapi-hidraw0 libusb-dev
+          if sudo apt-get install --simulate --quiet --yes picolibc-riscv64-unknown-elf gcc-riscv64-unknown-elf binutils-riscv64-unknown-elf > /dev/null 2>&1; then
+            sudo apt-get --quiet --yes install picolibc-riscv64-unknown-elf \
+              gcc-riscv64-unknown-elf \
+              binutils-riscv64-unknown-elf
+          fi
           mkdir artifacts
           cd qmk_firmware
+          python3 -m pip install --user qmk
           python3 -m pip install --user -r requirements.txt
-          python3 util/qmk_install.py  # Install additional dependencies
+          cp -r alpha_centauri qmk_firmware/keyboards/
 
       - name: Compile QMK firmware for left hand
         run: |
