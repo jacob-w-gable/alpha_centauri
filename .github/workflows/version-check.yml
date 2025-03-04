@@ -23,6 +23,8 @@ jobs:
           echo "VERSION=$VERSION" >> $GITHUB_ENV
 
       - name: Create and push tag if it's new
+        env:
+          PAT: ${{ secrets.GH_PAT }}
         run: |
           # "v${VERSION}" becomes "v1.2.3", for example
           if git rev-parse "v${VERSION}" >/dev/null 2>&1; then
@@ -32,7 +34,6 @@ jobs:
             git config user.name github-actions
             git config user.email github-actions@github.com
             git tag "v${VERSION}"
-            git push origin "v${VERSION}"
-            git push origin --tags
+            git push "https://x-access-token:${PAT}@github.com/${{ github.repository }}" "v${VERSION}"
           fi
 
