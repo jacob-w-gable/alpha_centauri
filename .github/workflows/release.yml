@@ -1,0 +1,112 @@
+name: Build & Release
+
+on:
+  push:
+    branches:
+      - main
+
+
+jobs:  
+  check-version:
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.get_version.outputs.version }}
+      version_changed: ${{ steps.get_version.outputs.version_changed }}
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Parse version from JSON
+        id: get_version
+        run: |
+          git fetch --tags --quiet
+
+          # Parse the version from the JSON file using jq
+          VERSION=$(jq -r '.usb.device_version' keyboard.json)
+
+          # When the keyboard is out of pre-release, remove the "-pre" suffix
+          TAG="v${VERSION}-pre"
+
+          if git show-ref --tags | grep -q "refs/tags/${TAG}$"; then
+            echo "Tag ${TAG} already exists. Skipping."
+            echo "version=$VERSION" >> $GITHUB_OUTPUT
+            echo "version_changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "Tag ${TAG} does not exist. Continuing to release."
+
+            echo "version=$VERSION" >> $GITHUB_OUTPUT
+            echo "version_changed=true" >> $GITHUB_OUTPUT
+          fi
+
+  build-and-release:
+    runs-on: ubuntu-latest
+    needs: check-version
+    if: needs.check-version.outputs.version_changed == 'true'
+    steps:
+      - name: Check out keyboard repo
+        uses: actions/checkout@v4
+        with:
+          path: alpha_centauri
+
+      - name: Clone QMK firmware repository
+        run: |
+          # This clones a specific commit. Use the last-known working commit hash.
+          mkdir qmk_firmware
+          cd qmk_firmware
+          git init
+          git remote add origin https://github.com/qmk/qmk_firmware.git
+          # Change this whenever updating the QMK version.
+          git fetch --depth 1 origin 884a808813fe9e5f90aab4079a5944997465161e
+          git checkout FETCH_HEAD
+          git submodule update --init --recursive
+
+      - name: Install QMK dependencies
+        run: |
+          sudo apt update
+          sudo apt-get --quiet --yes install \
+            build-essential clang-format diffutils gcc git unzip wget zip \
+            python3-pip binutils-avr gcc-avr avr-libc binutils-arm-none-eabi \
+            gcc-arm-none-eabi libnewlib-arm-none-eabi avrdude dfu-programmer \
+            dfu-util teensy-loader-cli libhidapi-hidraw0 libusb-dev
+          if sudo apt-get install --simulate --quiet --yes picolibc-riscv64-unknown-elf gcc-riscv64-unknown-elf binutils-riscv64-unknown-elf > /dev/null 2>&1; then
+            sudo apt-get --quiet --yes install picolibc-riscv64-unknown-elf \
+              gcc-riscv64-unknown-elf \
+              binutils-riscv64-unknown-elf
+          fi
+          mkdir artifacts
+          cp -r alpha_centauri qmk_firmware/keyboards
+          cd qmk_firmware
+          python3 -m pip install --user qmk
+          python3 -m pip install --user -r requirements.txt
+          qmk config user.keyboard=alpha_centauri
+          qmk config user.keymap=default
+
+      - name: Compile keymap dependencies
+        run: |
+          cd qmk_firmware/keyboards/alpha_centauri/keymaps/default
+          make deps
+
+      - name: Compile QMK firmware for left hand
+        run: |
+          cd qmk_firmware
+          CFLAGS="$CFLAGS -DINIT_EE_HANDS_LEFT" qmk compile
+          mv alpha_centauri_default.uf2 ../artifacts/alpha_centauri_default_left.uf2
+
+      - name: Compile QMK firmware for right hand
+        run: |
+          cd qmk_firmware
+          CFLAGS="$CFLAGS -DINIT_EE_HANDS_RIGHT" qmk compile
+          mv alpha_centauri_default.uf2 ../artifacts/alpha_centauri_default_right.uf2
+
+      - name: Create a GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: artifacts/*
+          token: ${{ secrets.GITHUB_TOKEN }}
+          # Once the keyboard is out of pre-release, remove the "-pre" suffix
+          tag_name: "v${{ needs.check-version.outputs.version }}-pre"
+          name: "Release: v${{ needs.check-version.outputs.version }}-pre"
+          generate_release_notes: true
+          draft: false
+          prerelease: true

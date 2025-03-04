@@ -34,6 +34,7 @@ The keymap has been designed for comfort and efficiency, prioritizing typing/pro
 
 ## Detailed Documentation
 
+- [Quickstart](https://github.com/jacob-w-gable/alpha_centauri/wiki/Quickstart)
 - [Building/Flashing the Firmware](https://github.com/jacob-w-gable/alpha_centauri/wiki/Building-and-Flashing)
 - [Design](https://github.com/jacob-w-gable/alpha_centauri/wiki/Design)
 
