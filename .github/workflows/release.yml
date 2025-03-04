@@ -51,10 +51,14 @@ jobs:
 
       - name: Clone QMK firmware repository
         run: |
-          git clone https://github.com/qmk/qmk_firmware.git --depth=1
+          # This clones a specific commit. Use the last-known working commit hash.
+          mkdir qmk_firmware
           cd qmk_firmware
+          git init
+          git remote add origin https://github.com/qmk/qmk_firmware.git
           # Change this whenever updating the QMK version
-          git checkout 884a808
+          git fetch --depth 1 origin 884a808813fe9e5f90aab4079a5944997465161e
+          git checkout FETCH_HEAD
 
       - name: Install QMK dependencies
         run: |
