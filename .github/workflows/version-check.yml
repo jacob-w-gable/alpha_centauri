@@ -26,7 +26,7 @@ jobs:
         env:
           PAT: ${{ secrets.GH_PAT }}
         run: |
-          # "v${VERSION}" becomes "v1.2.3", for example
+          # "v${VERSION}" becomes "v1.2.3", for example.
           if git rev-parse "v${VERSION}" >/dev/null 2>&1; then
             echo "Tag v${VERSION} already exists. Skipping."
           else
