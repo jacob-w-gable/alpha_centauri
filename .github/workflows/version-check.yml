@@ -1,0 +1,35 @@
+# This GitHub Action checks the keyboard version from keyboard.json and creates a tag if it's new.
+name: Check version
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  check-version:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Parse version from JSON
+        id: get_version
+        run: |
+          # Parse the version from the JSON file using jq
+          VERSION=$(jq -r '.usb.device_version' keyboard.json)
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
+
+      - name: Create and push tag if it's new
+        run: |
+          # "v${VERSION}" becomes "v1.2.3", for example
+          if git rev-parse "v${VERSION}" >/dev/null 2>&1; then
+            echo "Tag v${VERSION} already exists. Skipping."
+          else
+            echo "Tag v${VERSION} does not exist. Creating it."
+            git config user.name github-actions
+            git config user.email github-actions@github.com
+            git tag "v${VERSION}"
+            git push origin "v${VERSION}"
+          fi
+

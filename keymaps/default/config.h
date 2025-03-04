@@ -30,9 +30,12 @@
 #define UNICODE_SELECTED_MODES UNICODE_MODE_LINUX
 
 /* Hand configuration */
-// #define MASTER_LEFT
-// #define MASTER_RIGHT
+// If `MASTER_LEFT` and `MASTER_RIGHT` are both undefined, define `EE_HANDS`.
+#ifndef MASTER_LEFT
+#ifndef MASTER_RIGHT
 #define EE_HANDS
+#endif
+#endif
 
 #define TAPPING_TERM_PER_KEY
 #define QUICK_TAP_TERM 120

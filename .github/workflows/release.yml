@@ -1,0 +1,62 @@
+name: Build & Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  build-qmk:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out keyboard repo
+        uses: actions/checkout@v4
+        with:
+          path: alpha_centauri
+
+      - name: Clone QMK firmware repository
+        run: |
+          git clone https://github.com/qmk/qmk_firmware.git --depth=1
+          cd qmk_firmware
+          # Change this whenever updating the QMK version
+          git checkout 884a808
+
+      - name: Install QMK dependencies
+        run: |
+          sudo apt update
+          sudo apt install -y python3-pip gcc-avr avr-libc dfu-util binutils-arm-none-eabi gcc-arm-none-eabi
+
+      - name: Clone keyboard into QMK keyboards directory
+        run: |
+          cp -r alpha_centauri qmk_firmware/keyboards/
+
+      - name: Set up QMK environment
+        run: |
+          mkdir artifacts
+          cd qmk_firmware
+          python3 -m pip install --user -r requirements.txt
+          python3 util/qmk_install.py  # Install additional dependencies
+
+      - name: Compile QMK firmware for left hand
+        run: |
+          cd qmk_firmware
+          CFLAGS="$CFLAGS -DINIT_EE_HANDS_LEFT" qmk compile -kb alpha_centauri -km default
+          mv alpha_centauri_default.uf2 ../artifacts/alpha_centauri_default_left.uf2
+
+      - name: Compile QMK firmware for right hand
+        run: |
+          cd qmk_firmware
+          CFLAGS="$CFLAGS -DINIT_EE_HANDS_RIGHT" qmk compile -kb alpha_centauri -km default
+          mv alpha_centauri_default.uf2 ../artifacts/alpha_centauri_default_right.uf2
+
+      - name: Create a GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: artifacts/*
+          token: ${{ secrets.GITHUB_TOKEN }}
+          tag_name: "${{ github.ref_name }}-pre"
+          name: "Release: ${{ github.ref_name }}-pre"
+          generate_release_notes: true
+          draft: false
+          prerelease: true
