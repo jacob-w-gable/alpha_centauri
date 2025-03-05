@@ -503,7 +503,6 @@ wierd         -> weird
 :gruop: -> group
 :knmow: -> know
 :vhange: -> change
-:gruop: -> group
 :beceom: -> become
 :becoem: -> become
 :oollow: -> follow

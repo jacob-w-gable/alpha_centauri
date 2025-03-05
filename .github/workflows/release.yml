@@ -75,21 +75,28 @@ jobs:
               binutils-riscv64-unknown-elf
           fi
           mkdir artifacts
+          cp -r alpha_centauri qmk_firmware/keyboards
           cd qmk_firmware
           python3 -m pip install --user qmk
           python3 -m pip install --user -r requirements.txt
-          cp -r alpha_centauri qmk_firmware/keyboards/
+          qmk config user.keyboard=alpha_centauri
+          qmk config user.keymap=default
+
+      - name: Compile keymap dependencies
+        run: |
+          cd qmk_firmware/keyboards/alpha_centauri/keymaps/default
+          make deps
 
       - name: Compile QMK firmware for left hand
         run: |
           cd qmk_firmware
-          CFLAGS="$CFLAGS -DINIT_EE_HANDS_LEFT" qmk compile -kb alpha_centauri -km default
+          CFLAGS="$CFLAGS -DINIT_EE_HANDS_LEFT" qmk compile
           mv alpha_centauri_default.uf2 ../artifacts/alpha_centauri_default_left.uf2
 
       - name: Compile QMK firmware for right hand
         run: |
           cd qmk_firmware
-          CFLAGS="$CFLAGS -DINIT_EE_HANDS_RIGHT" qmk compile -kb alpha_centauri -km default
+          CFLAGS="$CFLAGS -DINIT_EE_HANDS_RIGHT" qmk compile
           mv alpha_centauri_default.uf2 ../artifacts/alpha_centauri_default_right.uf2
 
       - name: Create a GitHub Release

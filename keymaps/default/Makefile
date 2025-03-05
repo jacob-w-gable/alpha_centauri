@@ -5,13 +5,16 @@ ifeq ($(AUTOCORRECT_ENABLE), yes)
 DEPS += autocorrect_data.h
 endif
 
-.PHONY: c json compile flash clean all
+.PHONY: c json compile flash clean all deps
 
 all: compile
 
 # build the firmware (mostly, you should just use this to validate before flashing)
 compile: $(DEPS)
 	qmk compile
+
+# Alias for compiling dependencies
+deps: $(DEPS)
 
 # Convert the json config to a needed c file
 $(KEYMAP_NAME).c: $(KEYMAP_NAME).json
