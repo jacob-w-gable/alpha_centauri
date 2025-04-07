@@ -58,7 +58,7 @@
         {"matrix": [4, 4], "x": 160, "y": 5, "flags": 4},
         {"matrix": [4, 3], "x": 176, "y": 0, "flags": 4},
         {"matrix": [4, 2], "x": 192, "y": 2, "flags": 4},
-        {"matrix": [4, 1], "x": 208, "y": 9, "flags": 4},
+        {"matrix": [4, 1], "x": 208, "y": 9, "flags": 4}
     ]
   },
   "features": {
