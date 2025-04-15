@@ -7,10 +7,10 @@ The keymap has been designed for comfort and efficiency, prioritizing typing/pro
 ## Roadmap
 
 - [ ] v0.1 - Fundamental keyboard design
-  - [ ] Layout definition
+  - [X] Layout definition
   - [x] Firmware
   - [ ] `.stl` files
-  - [ ] Documentation
+  - [X] Documentation
 - [ ] v0.2 - Encoders
   - [ ] Updated layout definition
   - [ ] Updated firmware
