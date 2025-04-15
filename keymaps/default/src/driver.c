@@ -390,6 +390,7 @@ bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record)
     case SHIFT2_LEFT:
     // case SHIFT2_RIGHT:
     case CORNER_BR:
+    case LEFT_THUMB_INSIDE:
     case RSFT_T(KC_ENT):
         // Immediately select the hold action when another key is pressed. (A B ~A ~B roll pattern)
         return true;
