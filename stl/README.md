@@ -4,7 +4,7 @@ These are the files for 3D-printing the keyboard case. These cases are compatibl
 
 Of course, the advantage of Amoeba King's over Amoeba v1's, is support for per-key LED backlighting. 
 
-If you simply want to handwire, either case will do, though the v1 case will use _slightly_ more material. 
+If you simply want to handwire, either case will do, though the King case will use _slightly_ more material. 
 
 ![Case Render](case_render.png)
 
