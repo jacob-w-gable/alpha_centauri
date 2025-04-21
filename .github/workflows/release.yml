@@ -26,7 +26,7 @@ jobs:
           VERSION=$(jq -r '.usb.device_version' keyboard.json)
 
           # When the keyboard is out of pre-release, remove the "-pre" suffix
-          TAG="v${VERSION}-pre"
+          TAG="v${VERSION}"
 
           if git show-ref --tags | grep -q "refs/tags/${TAG}$"; then
             echo "Tag ${TAG} already exists. Skipping."
@@ -105,8 +105,8 @@ jobs:
           files: artifacts/*
           token: ${{ secrets.GITHUB_TOKEN }}
           # Once the keyboard is out of pre-release, remove the "-pre" suffix
-          tag_name: "v${{ needs.check-version.outputs.version }}-pre"
-          name: "Release: v${{ needs.check-version.outputs.version }}-pre"
+          tag_name: "v${{ needs.check-version.outputs.version }}"
+          name: "Release: v${{ needs.check-version.outputs.version }}"
           generate_release_notes: true
           draft: false
-          prerelease: true
+          prerelease: false
