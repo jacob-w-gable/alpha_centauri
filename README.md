@@ -12,18 +12,16 @@ The keymap has been designed for comfort and efficiency, prioritizing typing/pro
   - [x] `.stl` files
   - [x] RGB support
   - [x] Documentation
-- [ ] v0.2 - Haptic feedback
-  - [ ] Updated firmware
-  - [ ] `.stl` files
-- [ ] v0.3 - OLED
+  - [x] Haptic feedback
+- [ ] v0.2 - OLED
   - [ ] QMK already has ST7789 support, but I need to implement a 172x320 resolution
   - [ ] Updated firmware
   - [ ] `.stl` files
-- [ ] v0.4 - Encoders
+- [ ] v0.3 - Encoders
   - [ ] Updated layout definition
   - [ ] Updated firmware
   - [ ] `.stl` files
-- [ ] v0.5 - Final updates
+- [ ] v0.4 - Final updates
   - [ ] Find some better encoder knobs
   - [ ] `.stl` files
 - [ ] v1.0 - PCB Release
