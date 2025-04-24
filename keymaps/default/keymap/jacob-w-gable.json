@@ -337,10 +337,10 @@
       "KC_NO",
       "KC_NO",
       "KC_NO",
-      "KC_NO",
+      "EE_CLR",
       "KC_TRNS",
       "KC_NO",
-      "KC_NO"
+      "QK_BOOT"
     ],
     [
       "KC_TRNS",
@@ -385,7 +385,7 @@
       "KC_TRNS"
     ],
     [
-      "KC_ESC",
+      "KC_TRNS",
       "KC_TRNS",
       "KC_TRNS",
       "KC_TRNS",
