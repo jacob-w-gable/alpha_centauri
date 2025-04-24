@@ -37,7 +37,11 @@ autocorrect: autocorrect_data.h
 # Use this to flash the firmware. This flashes both sides with their own firmware,
 # making it so that the USB can be plugged into either side.
 flash: $(DEPS)
-	qmk flash -bl uf2-split-left && qmk flash -bl uf2-split-right
+	./mount_rp2040.sh
+	qmk flash -bl uf2-split-left
+	sleep 2
+	./mount_rp2040.sh
+	qmk flash -bl uf2-split-right
 	
 clean:
 	rm *.bak autocorrect_data.h keymap/jacob-w-gable.c
