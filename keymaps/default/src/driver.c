@@ -17,6 +17,10 @@
 bool shift_l_down = false;
 bool shift_r_down = false;
 
+// State of the left thumb inside key
+bool left_thumb_inside_down = false;
+uint32_t left_thumb_inside_timeout;
+
 /**
  * User-level implementation of process_record, where keystrokes can be intercepted.
  * `record` has extra info about the keypress event (down, up, tap, hold, etc.).
@@ -29,6 +33,32 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record)
 {
     switch (keycode)
     {
+
+    // Bypass the Get Hold on Other Key Press setting for the ctrl + spacebar.
+    // Rarely a use for ctrl + space, and "= " is much more common.
+    // This effectively resets to default, single-layer tapping style for this one corner case.
+    // Ctrl + space is still possible, by simply waiting the tapping term befre ressing space.
+    case LEFT_THUMB_INSIDE:
+        // Keep up with the status of left thumb key, save a timeout
+        left_thumb_inside_down = record->event.pressed;
+        if (record->event.pressed) {
+            left_thumb_inside_timeout = timer_read32() + get_tapping_term(keycode, record);
+        }
+        break;
+    case RIGHT_THUMB_MIDDLE:
+        // If left thumb inside is pressed, and the right thumb middle is pressed, all within
+        // the taping term...
+        if (record->event.pressed && left_thumb_inside_down && 
+              !timer_expired32(timer_read32(), left_thumb_inside_timeout)) {
+            // Unpress LCTRL
+            unregister_code(KC_LCTL);
+            left_thumb_inside_down = false;
+            // Tap the keycode for "= "
+            tap_code16(KC_EQL);
+            tap_code16(KC_SPC);
+            return false;
+        }
+        break;
 
     /**
      * Keep up if both shifts are held
