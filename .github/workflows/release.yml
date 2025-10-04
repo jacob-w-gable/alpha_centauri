@@ -57,7 +57,7 @@ jobs:
           git init
           git remote add origin https://github.com/qmk/qmk_firmware.git
           # Change this whenever updating the QMK version.
-          git fetch --depth 1 origin 884a808813fe9e5f90aab4079a5944997465161e
+          git fetch --depth 1 origin 7be4540b4688eab74920eb4cb2347af43fb6a779
           git checkout FETCH_HEAD
           git submodule update --init --recursive
 
