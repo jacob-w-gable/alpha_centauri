@@ -1,6 +1,6 @@
 include rules.mk
 
-DEPS := keymap.c src/driver.c $(KEYMAP_NAME).c config.h
+DEPS := src/driver.c $(KEYMAP_NAME).c config.h
 ifeq ($(AUTOCORRECT_ENABLE), yes)
 DEPS += autocorrect_data.h
 endif
@@ -40,6 +40,14 @@ flash: $(DEPS)
 	./mount_rp2040.sh
 	qmk flash -bl uf2-split-left
 	sleep 2
+	./mount_rp2040.sh
+	qmk flash -bl uf2-split-right
+
+flash_left: $(DEPS)
+	./mount_rp2040.sh
+	qmk flash -bl uf2-split-left
+
+flash_right: $(DEPS)
 	./mount_rp2040.sh
 	qmk flash -bl uf2-split-right
 	
