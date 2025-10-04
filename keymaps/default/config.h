@@ -8,7 +8,7 @@
 #define RAW_USAGE_ID 0x61
 
 // Solenoid config
-#define SOLENOID_PIN B4
+#define SOLENOID_PIN GP8
 #define SOLENOID_MAX_DWELL 250
 #define SOLENOID_MIN_DWELL 4
 #define SOLENOID_DEFAULT_DWELL 30
@@ -36,6 +36,10 @@
 #define EE_HANDS
 #endif
 #endif
+
+// Split configuration
+#define SERIAL_USART_TX_PIN GP9
+#define SPLIT_CONNECTION_CHECK_TIMEOUT 100
 
 #define TAPPING_TERM_PER_KEY
 #define QUICK_TAP_TERM 120

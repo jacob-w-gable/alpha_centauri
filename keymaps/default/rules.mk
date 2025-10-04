@@ -1,5 +1,3 @@
-BOOTLOADER=rp2040
-CONVERT_TO=elite_pi
 MOUSEKEY_ENABLE = yes     # Mouse keys
 VIA_ENABLE      = no      # Disable VIA
 LTO_ENABLE      = no
@@ -12,6 +10,8 @@ HAPTIC_ENABLE = yes
 HAPTIC_DRIVER = solenoid
 CONSOLE_ENABLE = yes
 UNICODEMAP_ENABLE = yes
+
+RAW_ENABLE = yes
 
 # saving space (more for AVR controllers)
 SPACE_CADET_ENABLE = yes
