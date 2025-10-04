@@ -17,6 +17,9 @@
 bool shift_l_down = false;
 bool shift_r_down = false;
 
+// Whether the Colemak layer is temporarily disabled
+bool disable_colemak = false;
+
 // State of the left thumb inside key
 bool left_thumb_inside_down = false;
 uint32_t left_thumb_inside_timeout;
@@ -44,6 +47,17 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record)
         if (record->event.pressed) {
             left_thumb_inside_timeout = timer_read32() + get_tapping_term(keycode, record);
         }
+        // Separately, handle the temporary disabling of the Colemak layer
+        if (!record->tap.count && record->event.pressed && IS_LAYER_ON(1))
+        {
+            layer_off(1);
+            disable_colemak = true;
+        }
+        else if (!record->tap.count && !record->event.pressed && disable_colemak)
+        {
+            layer_on(1);
+            disable_colemak = false;
+        }
         break;
     case RIGHT_THUMB_MIDDLE:
         // If left thumb inside is pressed, and the right thumb middle is pressed, all within
@@ -57,6 +71,20 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record)
             tap_code16(KC_EQL);
             tap_code16(KC_SPC);
             return false;
+        }
+        break;
+
+    // Handle the temporary disabling of the Colemak layer
+    case RIGHT_THUMB_INSIDE:
+        if (!record->tap.count && record->event.pressed && IS_LAYER_ON(1))
+        {
+            layer_off(1);
+            disable_colemak = true;
+        }
+        else if (!record->tap.count && !record->event.pressed && disable_colemak)
+        {
+            layer_on(1);
+            disable_colemak = false;
         }
         break;
 
@@ -110,6 +138,18 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record)
         {
             tap_code16(KC_LPRN);
             return false;
+        }
+
+        // Separately, handle the temporary disabling of the Colemak layer
+        if (!record->tap.count && record->event.pressed && IS_LAYER_ON(1))
+        {
+            layer_off(1);
+            disable_colemak = true;
+        }
+        else if (!record->tap.count && !record->event.pressed && disable_colemak)
+        {
+            layer_on(1);
+            disable_colemak = false;
         }
         break;
 
@@ -229,7 +269,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record)
         break;
 
     /*
-     * toggle GREEK layer.
+     * toggle Colemak layer.
      * Do this when the layer key is held down.
      */
     // on
@@ -538,4 +578,3 @@ bool get_haptic_enabled_key(uint16_t keycode, keyrecord_t *record)
 
     return true;
 }
-
