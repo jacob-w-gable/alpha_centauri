@@ -11,6 +11,10 @@
 #define SHIFT2_LEFT LT(3, KC_TAB)
 #define SHIFT2_RIGHT LT(3, KC_QUOT)
 
+#include "quantum.h"
+#include "raw_hid.h"
+#include "rgb_matrix.h"
+#include "color.h"
 #include "unicode.c"
 
 // Global state of each shift key
@@ -577,4 +581,62 @@ bool get_haptic_enabled_key(uint16_t keycode, keyrecord_t *record)
     }
 
     return true;
+}
+
+// Convert an RGB color to HSV (0-255 ranges)
+static hsv_t rgb_to_hsv(rgb_t rgb) {
+  hsv_t hsv;
+  uint8_t rgbMin = (rgb.r < rgb.g) ? (rgb.r < rgb.b ? rgb.r : rgb.b)
+                                   : (rgb.g < rgb.b ? rgb.g : rgb.b);
+  uint8_t rgbMax = (rgb.r > rgb.g) ? (rgb.r > rgb.b ? rgb.r : rgb.b)
+                                   : (rgb.g > rgb.b ? rgb.g : rgb.b);
+
+  hsv.v = rgbMax;
+  if (hsv.v == 0) {
+    // Black, no color
+    hsv.h = 0;
+    hsv.s = 0;
+    return hsv;
+  }
+
+  uint8_t delta = rgbMax - rgbMin;
+  hsv.s = (uint16_t)255 * delta / hsv.v;
+  if (hsv.s == 0) {
+    // Gray, no saturation
+    hsv.h = 0;
+    return hsv;
+  }
+
+  // Hue calculation: 0-255 scaled (360° = 255)
+  if (rgbMax == rgb.r)
+    hsv.h = 0 + 43 * (rgb.g - rgb.b) / delta;
+  else if (rgbMax == rgb.g)
+    hsv.h = 85 + 43 * (rgb.b - rgb.r) / delta;
+  else /* rgbMax == rgb.b */
+    hsv.h = 171 + 43 * (rgb.r - rgb.g) / delta;
+
+  return hsv;
+}
+
+// Handle incoming Raw HID data
+void raw_hid_receive(uint8_t *data, uint8_t length) {
+  // Expect a 32-byte report. Define a simple protocol:
+  // data[0] = command ID, data[1..3] = RGB values, data[4] = persist flag, rest
+  // unused.
+  uint8_t cmd = data[0];
+  if (cmd == 0x01) {
+    uint8_t r = data[1];
+    uint8_t g = data[2];
+    uint8_t b = data[3];
+
+    rgb_t input_color = {.r = r, .g = g, .b = b};
+
+    // Convert to HSV
+    hsv_t target_hsv = rgb_to_hsv(input_color);
+
+    hsv_t current_hsv = rgb_matrix_get_hsv();
+
+    rgb_matrix_sethsv_noeeprom(target_hsv.h, current_hsv.s, current_hsv.v);
+    rgb_matrix_sethsv(target_hsv.h, current_hsv.s, current_hsv.v);
+  }
 }
