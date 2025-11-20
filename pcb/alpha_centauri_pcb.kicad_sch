@@ -1,0 +1,188 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "492fae09-e9ab-44d2-b8f8-8ae87165f151")
+	(paper "A3")
+	(title_block
+		(title "Alpha Centauri")
+		(date "2025-08-17")
+		(rev "v1.0")
+		(company "Jacob Gable")
+	)
+	(lib_symbols)
+	(sheet
+		(at 68.58 218.44)
+		(size 78.74 41.91)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "39aaa4cf-e532-453b-a67e-186779b167af")
+		(property "Sheetname" "MCU Left"
+			(at 68.58 217.7284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "mcu_l.kicad_sch"
+			(at 68.58 260.9346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 45.72 110.49)
+		(size 134.62 76.2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "445d0b70-ee5d-4cba-9f48-98d30c9a60e4")
+		(property "Sheetname" "Keyboard Left"
+			(at 45.72 109.7784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "keyboard_l.kicad_sch"
+			(at 45.72 187.2746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 207.01 219.71)
+		(size 72.39 39.37)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7361bbbc-4412-48b5-9e48-e20d3488dec5")
+		(property "Sheetname" "MCU Right"
+			(at 207.01 218.9984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "mcu_r.kicad_sch"
+			(at 207.01 259.6646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 234.95 113.03)
+		(size 128.27 72.39)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "ab700b36-499d-49b7-8309-af5267778fe9")
+		(property "Sheetname" "Keyboard Right"
+			(at 234.95 112.3184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "keyboard_r.kicad_sch"
+			(at 234.95 186.0046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

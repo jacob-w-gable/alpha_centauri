@@ -3,3 +3,10 @@ jacob-w-gable.c.bak
 autocorrect_data.h
 autocorrect_data.h.bak
 lv_port_pc_vscode
+pcb/production
+pcb/alpha_centauri_pcb-backups
+pcb/_autosave-alpha_centauri_pcb.kicad_prl
+pcb/fp-info-cache
+pcb/*_pro
+pcb/*.lck
+rgb_ctrl/target

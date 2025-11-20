@@ -24,9 +24,9 @@ The keymap has been designed for comfort and efficiency, prioritizing typing/pro
 - [ ] v0.4 - Final updates
   - [ ] Find some better encoder knobs
   - [ ] `.stl` files
-- [ ] v1.0 - PCB Release
-  - [ ] PCB files
-  - [ ] Updated firmware
+- [-] v1.0 - PCB Release
+  - [x] PCB files
+  - [x] Updated firmware
   - [ ] `.stl` files
   - [ ] Merge keyboard into QMK Firmware
   - [ ] Create a more community-oriented keymap

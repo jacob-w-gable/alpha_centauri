@@ -1,0 +1,10579 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "673c15d4-b676-461e-8825-3fea20b1f318")
+	(paper "A3")
+	(title_block
+		(title "Alpha Centauri")
+		(date "2025-08-17")
+		(rev "v1.0")
+		(company "Jacob Gable")
+	)
+	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Connector:USB_C_Receptacle_USB2.0_16P"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 22.225 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "USB_C_Receptacle_USB2.0_16P"
+				(at 0 19.685 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 3.81 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
+				(at 3.81 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "usb universal serial bus type-C USB2.0"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "USB*C*Receptacle*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "USB_C_Receptacle_USB2.0_16P_0_0"
+				(rectangle
+					(start -0.254 -17.78)
+					(end 0.254 -16.764)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 10.16 15.494)
+					(end 9.144 14.986)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 10.16 10.414)
+					(end 9.144 9.906)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 10.16 7.874)
+					(end 9.144 7.366)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 10.16 2.794)
+					(end 9.144 2.286)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 10.16 0.254)
+					(end 9.144 -0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 10.16 -2.286)
+					(end 9.144 -2.794)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 10.16 -4.826)
+					(end 9.144 -5.334)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 10.16 -12.446)
+					(end 9.144 -12.954)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 10.16 -14.986)
+					(end 9.144 -15.494)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "USB_C_Receptacle_USB2.0_16P_0_1"
+				(rectangle
+					(start -10.16 17.78)
+					(end 10.16 -17.78)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -8.89 -3.81) (xy -8.89 3.81)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -7.62 -3.81)
+					(end -6.35 3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(arc
+					(start -7.62 3.81)
+					(mid -6.985 4.4423)
+					(end -6.35 3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -7.62 3.81)
+					(mid -6.985 4.4423)
+					(end -6.35 3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(arc
+					(start -8.89 3.81)
+					(mid -6.985 5.7067)
+					(end -5.08 3.81)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -5.08 -3.81)
+					(mid -6.985 -5.7067)
+					(end -8.89 -3.81)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -6.35 -3.81)
+					(mid -6.985 -4.4423)
+					(end -7.62 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -6.35 -3.81)
+					(mid -6.985 -4.4423)
+					(end -7.62 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 3.81) (xy -5.08 -3.81)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -2.54 1.143)
+					(radius 0.635)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 4.318) (xy 0 6.858) (xy 1.27 4.318) (xy -1.27 4.318)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.032) (xy 2.54 0.508) (xy 2.54 1.778)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -3.302) (xy -2.54 -0.762) (xy -2.54 0.508)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -5.842) (xy 0 4.318)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -5.842)
+					(radius 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 1.905 1.778)
+					(end 3.175 3.048)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "USB_C_Receptacle_USB2.0_16P_1_1"
+				(pin passive line
+					(at -7.62 -22.86 90)
+					(length 5.08)
+					(name "SHIELD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "S1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -22.86 90)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -22.86 90)
+					(length 5.08)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -22.86 90)
+					(length 5.08)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -22.86 90)
+					(length 5.08)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 15.24 180)
+					(length 5.08)
+					(name "VBUS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 15.24 180)
+					(length 5.08)
+					(hide yes)
+					(name "VBUS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 15.24 180)
+					(length 5.08)
+					(hide yes)
+					(name "VBUS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 15.24 180)
+					(length 5.08)
+					(hide yes)
+					(name "VBUS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 10.16 180)
+					(length 5.08)
+					(name "CC1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 7.62 180)
+					(length 5.08)
+					(name "CC2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 2.54 180)
+					(length 5.08)
+					(name "D-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 0 180)
+					(length 5.08)
+					(name "D-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -2.54 180)
+					(length 5.08)
+					(name "D+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -5.08 180)
+					(length 5.08)
+					(name "D+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -12.7 180)
+					(length 5.08)
+					(name "SBU1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -15.24 180)
+					(length 5.08)
+					(name "SBU2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:R_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0.762 0.508 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "R_Small"
+				(at 0.762 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Small_0_1"
+				(rectangle
+					(start -0.762 1.778)
+					(end 0.762 -1.778)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Diode:SS14"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SS14"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_SMD:D_SMA"
+				(at 0 -4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.vishay.com/docs/88746/ss12.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "40V 1A Schottky Diode, SMA"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode Schottky"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D*SMA*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SS14_0_1"
+				(polyline
+					(pts
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SS14_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "ScottoKeebs:LED_SK6812MINI"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 2.032 5.588 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right bottom)
+				)
+			)
+			(property "Value" "LED_SK6812MINI"
+				(at 1.27 -5.715 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "ScottoKeebs_Components:LED_SK6812MINI"
+				(at 1.27 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+				(at 1.27 -11.176 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "RGB LED with integrated controller"
+				(at 18.288 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC" "C5149201"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "RGB LED NeoPixel Mini addressable"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED*SK6812MINI*PLCC*3.5x3.5mm*P1.75mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_SK6812MINI_0_0"
+				(text "RGB"
+					(at 2.286 -4.191 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+			)
+			(symbol "LED_SK6812MINI_0_1"
+				(rectangle
+					(start -5.08 5.08)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 1.778 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -3.556) (xy 1.778 -3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -1.524) (xy 1.27 -2.54) (xy 1.27 -2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -2.54) (xy 1.27 -3.556) (xy 1.27 -3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.683 -1.016) (xy 3.683 -3.556) (xy 3.683 -4.064)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.699 -1.524) (xy 2.667 -1.524) (xy 3.683 -3.556) (xy 4.699 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.699 -3.556) (xy 2.667 -3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_SK6812MINI_1_1"
+				(pin input line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "DIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "DOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "ScottoKeebs:Placeholder_Diode"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Diode"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "1N4148 (DO-35) or 1N4148W (SOD-123)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D*DO?35*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Placeholder_Diode_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Placeholder_Diode_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "ScottoKeebs:Placeholder_Keyswitch"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "S"
+				(at 3.048 1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Keyswitch"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Placeholder_Keyswitch_0_1"
+				(polyline
+					(pts
+						(xy -2.54 2.54) (xy -1.524 1.524) (xy -1.524 1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -1.1684 1.1684)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 2.54) (xy 2.54 -0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 1.016) (xy 2.032 2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.143 -1.1938)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 -1.524) (xy 2.54 -2.54) (xy 2.54 -2.54) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -2.54 2.54 0)
+					(length 0)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -2.54 180)
+					(length 0)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "ScottoKeebs:Placeholder_Mounting_Hole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Mounting_Hole"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Placeholder_Mounting_Hole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Transistor_FET:AO3400A"
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at 5.08 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "AO3400A"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+				(at 5.08 -1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
+				(at 5.08 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "N-Channel MOSFET"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "AO3400A_0_1"
+				(polyline
+					(pts
+						(xy 0.254 1.905) (xy 0.254 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 2.286) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 0.508) (xy 0.762 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.27) (xy 0.762 -2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 1.651 0)
+					(radius 2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 2.54 -1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.794 0.508) (xy 2.921 0.381) (xy 3.683 0.381) (xy 3.81 0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "AO3400A_1_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "LEDs"
+		(exclude_from_sim no)
+		(at 121.158 124.46 0)
+		(effects
+			(font
+				(size 3 3)
+				(thickness 0.6)
+				(bold yes)
+			)
+		)
+		(uuid "650039d8-0787-4404-8d1a-0bd3f83e6fcd")
+	)
+	(text "Haptic Motors"
+		(exclude_from_sim no)
+		(at 132.08 32.766 0)
+		(effects
+			(font
+				(size 3 3)
+				(thickness 0.6)
+				(bold yes)
+			)
+		)
+		(uuid "6b879f60-420c-4288-a1fa-b5eb3198001d")
+	)
+	(text "Board-to-Board"
+		(exclude_from_sim no)
+		(at 322.58 28.956 0)
+		(effects
+			(font
+				(size 3 3)
+				(thickness 0.6)
+				(bold yes)
+			)
+		)
+		(uuid "b40cad9c-20ae-4635-aaf5-2dd923aced35")
+	)
+	(text "Mounting Holes"
+		(exclude_from_sim no)
+		(at 222.25 38.862 0)
+		(effects
+			(font
+				(size 3 3)
+				(thickness 0.6)
+				(bold yes)
+			)
+		)
+		(uuid "cdea02ce-4201-4715-abb8-165ac72fff4a")
+	)
+	(text "Key Matrix"
+		(exclude_from_sim no)
+		(at 306.324 116.586 0)
+		(effects
+			(font
+				(size 3 3)
+				(thickness 0.6)
+				(bold yes)
+			)
+		)
+		(uuid "d915f4fc-59a3-47e5-bbd2-5633ecf87bc3")
+	)
+	(junction
+		(at 288.29 233.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0439e404-4a04-49c7-9193-3280e1b45236")
+	)
+	(junction
+		(at 92.71 228.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "043f05fa-dfc6-4bdf-b62f-3705be677150")
+	)
+	(junction
+		(at 200.66 195.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "05a9a4e2-0f0e-48c8-8a9c-8562deb081ac")
+	)
+	(junction
+		(at 307.34 157.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0830afab-8b0e-434e-81ab-3e7d3c907c5b")
+	)
+	(junction
+		(at 92.71 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "092983a9-cd12-4a23-baef-9efa02b9db24")
+	)
+	(junction
+		(at 312.42 177.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0c0ad6ba-3af6-4f81-882a-53fe36880edb")
+	)
+	(junction
+		(at 337.82 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "17e591e0-ab7c-483a-aade-b5220650b6fd")
+	)
+	(junction
+		(at 92.71 195.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "181b51bb-c57b-485a-9321-1b3fd0fd8195")
+	)
+	(junction
+		(at 120.65 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1a93b1e5-4990-4e54-bcca-ad0484bea1f1")
+	)
+	(junction
+		(at 274.32 177.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "255cf072-a0d6-4b0f-afd9-bbd1ae199a1d")
+	)
+	(junction
+		(at 269.24 233.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "257ea1f7-1efb-4203-91ea-f50d08a87eab")
+	)
+	(junction
+		(at 236.22 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "26034ffd-da3f-44b5-b598-0f03cb6bf438")
+	)
+	(junction
+		(at 92.71 252.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2f522f64-61d5-46b4-a896-67476f48bc4c")
+	)
+	(junction
+		(at 176.53 195.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "32672978-efe5-46e8-a861-2306de4595f7")
+	)
+	(junction
+		(at 274.32 203.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "37be23ff-5edd-4607-ab13-ec354f1e94ec")
+	)
+	(junction
+		(at 326.39 208.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "39d6ebef-1f30-472c-a682-4f3f1a9d834c")
+	)
+	(junction
+		(at 345.44 208.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "40407237-bcd8-4801-bfe5-da49aabb7936")
+	)
+	(junction
+		(at 255.27 177.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "438c5bb9-00f3-4aee-93e0-3e31d91c1bee")
+	)
+	(junction
+		(at 148.59 252.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "49a37f62-38a2-4714-b10d-e137659ebe42")
+	)
+	(junction
+		(at 64.77 228.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4b02abfc-6ae8-4647-9a0a-4eb52acbf5bb")
+	)
+	(junction
+		(at 176.53 228.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4f24fb24-5d4f-4b21-81d6-546a2278f208")
+	)
+	(junction
+		(at 337.82 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "542bc8ee-cecb-46eb-89b4-86bb9a007a88")
+	)
+	(junction
+		(at 274.32 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5a579e80-fe43-49d5-a3a4-10751013c2ed")
+	)
+	(junction
+		(at 148.59 161.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5e1489c5-705d-4e54-9f61-6d4470e91798")
+	)
+	(junction
+		(at 148.59 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5f3a9d65-2026-4b99-bb16-148b63247bbb")
+	)
+	(junction
+		(at 255.27 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "60291ba1-a193-40d1-9796-f6091dab3b92")
+	)
+	(junction
+		(at 337.82 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "61a0e9da-8510-4946-92e1-5424a6a70add")
+	)
+	(junction
+		(at 331.47 177.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "652d949a-0247-4eeb-b09b-a54d62d97516")
+	)
+	(junction
+		(at 129.54 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "69e0a432-176d-4062-9d53-6e0c472de89d")
+	)
+	(junction
+		(at 269.24 182.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "79ad8f70-593f-40ed-9d94-2766b207cd58")
+	)
+	(junction
+		(at 148.59 195.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7c7b6702-621a-4907-a2bd-8af4383b3164")
+	)
+	(junction
+		(at 269.24 157.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7dba8ec8-afd4-4142-8d6e-4771279354cf")
+	)
+	(junction
+		(at 140.97 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "80f0d6bf-894d-47ab-9ed9-30cf6fcec0eb")
+	)
+	(junction
+		(at 176.53 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "82350758-6dda-4244-8838-b0eeffc90cde")
+	)
+	(junction
+		(at 293.37 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "84049c5e-7db8-418a-8817-1ed303e73a5e")
+	)
+	(junction
+		(at 176.53 161.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "84cc0047-2299-4a28-9edd-042e812f8e6d")
+	)
+	(junction
+		(at 236.22 177.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "876cef75-64ca-4e9e-a5f7-f4a758e0c802")
+	)
+	(junction
+		(at 50.8 195.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "87eff422-77fd-47f8-bee0-380178c0c40a")
+	)
+	(junction
+		(at 120.65 195.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8802eca9-bdca-4a58-8ce9-07612a1d8223")
+	)
+	(junction
+		(at 326.39 157.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8ca757f2-8342-45ef-b194-9221a2642f24")
+	)
+	(junction
+		(at 288.29 157.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8fe95728-97c0-4555-8f1a-da44b2f1a875")
+	)
+	(junction
+		(at 288.29 208.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a23b0b9e-0caf-43bb-93c3-7037899a9aec")
+	)
+	(junction
+		(at 326.39 182.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a269b8cd-a2cb-4e1c-9b55-894aa2e518bf")
+	)
+	(junction
+		(at 129.54 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a48c0c22-5174-4684-b265-d064e49d1a93")
+	)
+	(junction
+		(at 64.77 161.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a4b4e3f4-9f29-4fd0-89c7-19027792ca04")
+	)
+	(junction
+		(at 92.71 161.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "acb954c1-6359-4128-a44c-cae4d14197cb")
+	)
+	(junction
+		(at 255.27 203.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ad6e1934-5a3a-4a7f-88b8-e7d56514932f")
+	)
+	(junction
+		(at 269.24 208.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b4670b6e-c7a9-4ea6-bd74-0c2885f255d3")
+	)
+	(junction
+		(at 140.97 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b61d7425-b71b-454d-91fa-f79e07a90cc9")
+	)
+	(junction
+		(at 120.65 252.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b6c5fd99-ec48-46cd-9e89-4703c4bf09d0")
+	)
+	(junction
+		(at 293.37 177.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c3ed4109-17a2-4206-b19e-f0e82ed8ff01")
+	)
+	(junction
+		(at 64.77 195.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cfc9b991-af7b-4187-82cb-d728c7abdbac")
+	)
+	(junction
+		(at 119.38 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d22eb5b0-5467-4cd8-96bf-98174056e0f2")
+	)
+	(junction
+		(at 317.5 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d3c43cd9-ca1c-4208-93a8-87407a2864f1")
+	)
+	(junction
+		(at 236.22 203.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d8491b8c-5851-4bc7-a975-8a5141872341")
+	)
+	(junction
+		(at 312.42 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e1971e94-6085-4d35-b015-cfa17d8d8009")
+	)
+	(junction
+		(at 307.34 182.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e2c552a8-9906-4ad3-9a47-ac6c86c51547")
+	)
+	(junction
+		(at 120.65 228.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e520067d-c6fc-4717-bb3d-0682df8a8f6a")
+	)
+	(junction
+		(at 148.59 228.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ed42d387-5bb6-489e-af21-5ee07ee67a9b")
+	)
+	(junction
+		(at 288.29 182.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ef910bcd-6e9e-4695-bdf1-e574ec722708")
+	)
+	(junction
+		(at 120.65 161.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f06355c0-ac69-45b5-82f3-34fad838dd5c")
+	)
+	(junction
+		(at 307.34 208.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f3cbf973-39e5-4e72-a242-6cb8676e1f0c")
+	)
+	(junction
+		(at 345.44 182.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f520a8dc-9ee5-43ca-9030-60c3987e0866")
+	)
+	(junction
+		(at 176.53 252.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fa82a71c-8a22-4460-8c65-4ad78eb43263")
+	)
+	(no_connect
+		(at 336.55 73.66)
+		(uuid "30c20d0e-d246-4c7b-8398-3aee3290ad1d")
+	)
+	(no_connect
+		(at 336.55 50.8)
+		(uuid "582e3d74-423e-4a3c-ae7f-b90087ff5097")
+	)
+	(no_connect
+		(at 336.55 71.12)
+		(uuid "6e2cb448-dc47-45ee-a0f6-293069f9adda")
+	)
+	(no_connect
+		(at 336.55 48.26)
+		(uuid "6f2e2b54-66e6-4d97-861b-a3c56ac6bc66")
+	)
+	(no_connect
+		(at 57.15 146.05)
+		(uuid "f88858b9-96fb-4ac7-8549-9a68f431e985")
+	)
+	(wire
+		(pts
+			(xy 100.33 177.8) (xy 113.03 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0112cf7b-6046-4ccd-af05-662d97bcd887")
+	)
+	(wire
+		(pts
+			(xy 64.77 228.6) (xy 92.71 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "01ad8eaf-e899-470a-a1b5-6703cea3578c")
+	)
+	(wire
+		(pts
+			(xy 200.66 195.58) (xy 176.53 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03676549-04fd-4fda-abf4-cad0f07b26ca")
+	)
+	(wire
+		(pts
+			(xy 262.89 203.2) (xy 264.16 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04c14aa3-065f-431e-bc20-6bcf1882c981")
+	)
+	(wire
+		(pts
+			(xy 307.34 182.88) (xy 326.39 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09b45b4f-17ae-437f-9a87-6871c438cec0")
+	)
+	(wire
+		(pts
+			(xy 176.53 161.29) (xy 176.53 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a6d72e8-3689-40e0-8275-cc47de13e65e")
+	)
+	(wire
+		(pts
+			(xy 312.42 152.4) (xy 312.42 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0aea3adc-e7e0-4f4e-97d5-e75c492f9447")
+	)
+	(wire
+		(pts
+			(xy 176.53 252.73) (xy 176.53 251.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c72d17c-0bfd-4c88-8208-bf35ede3dd35")
+	)
+	(wire
+		(pts
+			(xy 92.71 161.29) (xy 92.71 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0cfce7c9-415b-4cf7-9c7c-c8caee82baff")
+	)
+	(wire
+		(pts
+			(xy 326.39 182.88) (xy 345.44 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d14608f-ae40-48cc-8dea-95492827e3de")
+	)
+	(wire
+		(pts
+			(xy 64.77 220.98) (xy 64.77 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d5f3f12-b813-4bd7-9f2e-c51f6752b419")
+	)
+	(wire
+		(pts
+			(xy 156.21 146.05) (xy 168.91 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0fde9901-cf06-4f2b-af69-10f7f8c05370")
+	)
+	(wire
+		(pts
+			(xy 281.94 203.2) (xy 283.21 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10a8b7da-f98b-4988-b273-63083586b29e")
+	)
+	(wire
+		(pts
+			(xy 129.54 58.42) (xy 140.97 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1113c0f0-0dc7-44e0-bb5f-8c037119763c")
+	)
+	(wire
+		(pts
+			(xy 274.32 203.2) (xy 274.32 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13f53195-01dd-4fb8-86ec-9293c13a891a")
+	)
+	(wire
+		(pts
+			(xy 269.24 208.28) (xy 288.29 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15a86ca9-82ce-4b37-b950-a0ce5ee15cc9")
+	)
+	(wire
+		(pts
+			(xy 250.19 157.48) (xy 269.24 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1717e478-dd62-4bc8-8f5f-de0bd06c745f")
+	)
+	(wire
+		(pts
+			(xy 255.27 152.4) (xy 255.27 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19304d09-ae9a-4a37-acf5-d1f26ca32269")
+	)
+	(wire
+		(pts
+			(xy 129.54 49.53) (xy 140.97 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1936dc80-d244-4416-a7bb-85724c38b078")
+	)
+	(wire
+		(pts
+			(xy 156.21 177.8) (xy 168.91 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1aea439d-d240-420d-ac91-d5dfbdf9e1fc")
+	)
+	(wire
+		(pts
+			(xy 243.84 228.6) (xy 245.11 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b0282f9-a545-43b5-abf8-a94ff126f3e6")
+	)
+	(wire
+		(pts
+			(xy 317.5 81.28) (xy 317.5 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "219b4ed5-a9e7-4427-9fbe-2824ca9034c3")
+	)
+	(wire
+		(pts
+			(xy 140.97 49.53) (xy 156.21 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22bc395c-286f-4866-9596-1116ad0ddbd6")
+	)
+	(wire
+		(pts
+			(xy 50.8 195.58) (xy 50.8 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "239260de-4c2c-43f4-a9f6-503ba28da25e")
+	)
+	(wire
+		(pts
+			(xy 281.94 152.4) (xy 283.21 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2462d253-70b7-4c4a-95bf-dd317a618f4c")
+	)
+	(wire
+		(pts
+			(xy 92.71 220.98) (xy 92.71 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25a76090-7266-4709-b5f4-0e1e21b2c76d")
+	)
+	(wire
+		(pts
+			(xy 337.82 63.5) (xy 337.82 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26521494-f4e3-4b2c-9836-f1698a1ff55c")
+	)
+	(wire
+		(pts
+			(xy 274.32 152.4) (xy 274.32 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28cb1bcf-628c-419b-838f-80e99054ab8d")
+	)
+	(wire
+		(pts
+			(xy 109.22 67.31) (xy 111.76 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ea5942d-00e0-4020-aca0-80052cc4f535")
+	)
+	(wire
+		(pts
+			(xy 312.42 177.8) (xy 312.42 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f06f089-310b-414d-9b22-ff243ee0264f")
+	)
+	(wire
+		(pts
+			(xy 337.82 55.88) (xy 337.82 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30c96450-f049-40f9-82f0-fdd950dfc236")
+	)
+	(wire
+		(pts
+			(xy 184.15 213.36) (xy 184.15 243.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31f87b08-d115-4cfe-ad70-5af4949bd044")
+	)
+	(wire
+		(pts
+			(xy 120.65 252.73) (xy 120.65 251.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "321b2632-cf5a-4b08-ae8d-c9f21221fc06")
+	)
+	(wire
+		(pts
+			(xy 129.54 69.85) (xy 129.54 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "373ccc9b-a91a-4af5-9e7f-4335e4781259")
+	)
+	(wire
+		(pts
+			(xy 336.55 60.96) (xy 337.82 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "382e3ce7-5c28-4e1c-b16c-1ab2f86f518a")
+	)
+	(wire
+		(pts
+			(xy 92.71 195.58) (xy 120.65 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38e7b03d-6805-4c8b-a953-2350b19ce711")
+	)
+	(wire
+		(pts
+			(xy 200.66 137.16) (xy 176.53 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e23d308-5241-40af-88ae-70006377cf55")
+	)
+	(wire
+		(pts
+			(xy 120.65 195.58) (xy 120.65 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f037e98-17ce-4f0c-99f3-c408a2140dc7")
+	)
+	(wire
+		(pts
+			(xy 92.71 252.73) (xy 92.71 251.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "414f29db-5bb6-4f73-8e81-6ba1e30b0bf8")
+	)
+	(wire
+		(pts
+			(xy 120.65 153.67) (xy 120.65 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "441f298a-19ce-4d8d-aaff-6603ea018547")
+	)
+	(wire
+		(pts
+			(xy 243.84 177.8) (xy 245.11 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44d394e6-7273-43ed-89ec-7e60070d3655")
+	)
+	(wire
+		(pts
+			(xy 317.5 81.28) (xy 321.31 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46a11658-7fa4-4bb0-8bf3-54e96d0a65a4")
+	)
+	(wire
+		(pts
+			(xy 148.59 252.73) (xy 148.59 251.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4755d597-fe32-4a14-8a9b-f8102038b6fb")
+	)
+	(wire
+		(pts
+			(xy 331.47 177.8) (xy 331.47 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47707303-3969-4ceb-ace8-f57ebd685b68")
+	)
+	(wire
+		(pts
+			(xy 64.77 252.73) (xy 92.71 252.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4802b44c-5e67-42c1-be3e-507728f022df")
+	)
+	(wire
+		(pts
+			(xy 92.71 228.6) (xy 92.71 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "494c3daa-1c17-44d0-a429-5060d1f06110")
+	)
+	(wire
+		(pts
+			(xy 336.55 63.5) (xy 337.82 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a64a824-79a4-4c0d-ad11-8e6564a59046")
+	)
+	(wire
+		(pts
+			(xy 119.38 67.31) (xy 119.38 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c4aca14-0857-4a6d-a967-80e211f6b4d6")
+	)
+	(wire
+		(pts
+			(xy 345.44 182.88) (xy 358.14 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4cfeb24b-da3c-4eee-ae26-a974360c18a2")
+	)
+	(wire
+		(pts
+			(xy 336.55 55.88) (xy 337.82 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d5b2f1d-91a9-4a92-af33-ae4eda1d4f14")
+	)
+	(wire
+		(pts
+			(xy 72.39 146.05) (xy 85.09 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e6a963c-7976-4304-ba78-d7b84da6c135")
+	)
+	(wire
+		(pts
+			(xy 92.71 153.67) (xy 92.71 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "514f4e89-dc92-45bc-aaf1-c8342dacd50b")
+	)
+	(wire
+		(pts
+			(xy 307.34 208.28) (xy 326.39 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52fda4e6-2968-4996-a970-25c558d04313")
+	)
+	(wire
+		(pts
+			(xy 148.59 153.67) (xy 148.59 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "536f6635-58ea-4b4f-b3f8-deb804798ee7")
+	)
+	(wire
+		(pts
+			(xy 320.04 203.2) (xy 321.31 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53978ca8-a999-4d8e-93ca-d972f3095b61")
+	)
+	(wire
+		(pts
+			(xy 313.69 81.28) (xy 317.5 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55123059-5796-4346-a933-80350a935400")
+	)
+	(wire
+		(pts
+			(xy 274.32 132.08) (xy 274.32 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "552dd416-1f42-42cf-8a85-3e0681eaf69c")
+	)
+	(wire
+		(pts
+			(xy 236.22 132.08) (xy 236.22 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "553b028b-ae55-4d9b-90f9-b2cdfb4db9e9")
+	)
+	(wire
+		(pts
+			(xy 129.54 57.15) (xy 129.54 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57c5fce2-a2a9-4ada-a1db-0aa3ce5815fa")
+	)
+	(wire
+		(pts
+			(xy 92.71 252.73) (xy 120.65 252.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59214118-1564-4efa-9a16-73ad6846249c")
+	)
+	(wire
+		(pts
+			(xy 156.21 213.36) (xy 168.91 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59b7f316-9d5a-4395-9ecc-1288390dc042")
+	)
+	(wire
+		(pts
+			(xy 64.77 252.73) (xy 64.77 251.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59e558c0-4000-4cb4-9b0e-3dc90cfece88")
+	)
+	(wire
+		(pts
+			(xy 331.47 132.08) (xy 331.47 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b6ed319-d2bc-40d7-8565-6114f54c6967")
+	)
+	(wire
+		(pts
+			(xy 345.44 208.28) (xy 358.14 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b724d1f-7c04-40d1-b8f9-176acb2ba285")
+	)
+	(wire
+		(pts
+			(xy 120.65 137.16) (xy 148.59 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c616412-1cd7-4a55-8406-9e598e069963")
+	)
+	(wire
+		(pts
+			(xy 120.65 161.29) (xy 120.65 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60574fa7-e48d-41eb-a0a8-cf0b842f726a")
+	)
+	(wire
+		(pts
+			(xy 236.22 177.8) (xy 236.22 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60f6346e-5788-492e-a576-08dbfa18cd4d")
+	)
+	(wire
+		(pts
+			(xy 148.59 252.73) (xy 176.53 252.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61a57414-34dc-45b3-aa0c-f77a7e9cea1f")
+	)
+	(wire
+		(pts
+			(xy 339.09 177.8) (xy 340.36 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6235aa8d-4bb0-46c9-8e88-8a2d6f963975")
+	)
+	(wire
+		(pts
+			(xy 184.15 146.05) (xy 184.15 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6250633a-363e-4a0b-a1fa-8d867598258c")
+	)
+	(wire
+		(pts
+			(xy 128.27 243.84) (xy 140.97 243.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62ab41db-c4c7-41eb-b499-6968ce303317")
+	)
+	(wire
+		(pts
+			(xy 53.34 243.84) (xy 57.15 243.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65845877-9aa9-4ed5-b69c-cd8f38fc0f8a")
+	)
+	(wire
+		(pts
+			(xy 92.71 137.16) (xy 120.65 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66528a7d-0952-47ed-9a55-f362ce707e3d")
+	)
+	(wire
+		(pts
+			(xy 64.77 185.42) (xy 64.77 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66c8871a-cb70-4102-bd5f-52416a405502")
+	)
+	(wire
+		(pts
+			(xy 255.27 177.8) (xy 255.27 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "674880dc-4498-4153-b87b-031f898811f0")
+	)
+	(wire
+		(pts
+			(xy 64.77 228.6) (xy 64.77 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67c8f8be-0bc3-4396-8fb2-15fc2d10aa09")
+	)
+	(wire
+		(pts
+			(xy 293.37 132.08) (xy 293.37 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68b3c320-d5a9-4573-94a8-1d2ac5e004eb")
+	)
+	(wire
+		(pts
+			(xy 176.53 195.58) (xy 176.53 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68e40616-b9b1-4a87-838a-5fd90234ef59")
+	)
+	(wire
+		(pts
+			(xy 64.77 161.29) (xy 92.71 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "692a8322-4db3-4029-b373-1753092d5735")
+	)
+	(wire
+		(pts
+			(xy 119.38 67.31) (xy 120.65 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a749da9-41e4-4631-b32d-27c69e27ef09")
+	)
+	(wire
+		(pts
+			(xy 64.77 195.58) (xy 92.71 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a98d4d8-83d4-43b8-848d-bc7ba3771cb1")
+	)
+	(wire
+		(pts
+			(xy 120.65 228.6) (xy 148.59 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ad79f26-3e85-421d-b6ed-a745b61c11dd")
+	)
+	(wire
+		(pts
+			(xy 72.39 177.8) (xy 85.09 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6bc7d465-c360-4a2c-8f8d-97911d0a158c")
+	)
+	(wire
+		(pts
+			(xy 128.27 146.05) (xy 140.97 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6daa4cd5-a5fe-4834-b736-e93e64a70a8c")
+	)
+	(wire
+		(pts
+			(xy 243.84 203.2) (xy 245.11 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6dc1dc42-83da-4fc5-a844-06f5b5dc75f0")
+	)
+	(wire
+		(pts
+			(xy 176.53 153.67) (xy 176.53 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6de3a1f3-b4b8-4afa-a74d-1503eca6ebb9")
+	)
+	(wire
+		(pts
+			(xy 148.59 195.58) (xy 148.59 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e4fd130-6832-4d54-8863-375a50196e62")
+	)
+	(wire
+		(pts
+			(xy 120.65 161.29) (xy 148.59 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7348a7f5-a64a-49d0-80ba-9844a4b40715")
+	)
+	(wire
+		(pts
+			(xy 116.84 67.31) (xy 119.38 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74d267c3-c144-47a1-b2fb-19d9638285ba")
+	)
+	(wire
+		(pts
+			(xy 243.84 152.4) (xy 245.11 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75fdb244-a791-4deb-a9f9-e8ef1d6e39f8")
+	)
+	(wire
+		(pts
+			(xy 148.59 161.29) (xy 148.59 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "771349cc-97f9-4422-994e-b5b2fdf91902")
+	)
+	(wire
+		(pts
+			(xy 207.01 195.58) (xy 200.66 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78e85bff-2e97-4422-addc-58a79b191dba")
+	)
+	(wire
+		(pts
+			(xy 128.27 58.42) (xy 129.54 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79e0722b-8b2b-44ca-b38e-e31f3d79e4ca")
+	)
+	(wire
+		(pts
+			(xy 250.19 208.28) (xy 269.24 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c5aa33e-c309-4683-9ea8-53722c520afd")
+	)
+	(wire
+		(pts
+			(xy 129.54 58.42) (xy 129.54 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d083f62-56eb-467a-854f-a8cc1d9a89b8")
+	)
+	(wire
+		(pts
+			(xy 120.65 185.42) (xy 120.65 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d9787bd-2c3e-469f-97c9-acfb1d3fec4a")
+	)
+	(wire
+		(pts
+			(xy 337.82 60.96) (xy 337.82 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "803b949e-b3b4-4fd5-bd31-44d0bf564f1c")
+	)
+	(wire
+		(pts
+			(xy 176.53 185.42) (xy 176.53 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8059ca23-f551-4e51-949e-038a7e9d4229")
+	)
+	(wire
+		(pts
+			(xy 50.8 161.29) (xy 64.77 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81871346-cc77-4469-ab32-2b88aaf28ad2")
+	)
+	(wire
+		(pts
+			(xy 100.33 243.84) (xy 113.03 243.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83057b0b-55e9-4752-b6de-b0fb1583a881")
+	)
+	(wire
+		(pts
+			(xy 148.59 185.42) (xy 148.59 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84e6527e-c01a-4f71-8e92-d477e1f9a86a")
+	)
+	(wire
+		(pts
+			(xy 148.59 195.58) (xy 176.53 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8551561e-fce5-43fa-a27b-130f447b0998")
+	)
+	(wire
+		(pts
+			(xy 148.59 228.6) (xy 148.59 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "860d646e-8f26-4a1b-a9b7-02ed1b5bbb5e")
+	)
+	(wire
+		(pts
+			(xy 293.37 152.4) (xy 293.37 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87da922e-d254-401a-906b-bde002dc7aeb")
+	)
+	(wire
+		(pts
+			(xy 120.65 228.6) (xy 120.65 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88b3d3b4-6709-48e5-8a9e-f2af4022c9eb")
+	)
+	(wire
+		(pts
+			(xy 269.24 182.88) (xy 288.29 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89a33f57-6ad4-40c9-8042-d9b2a646a77c")
+	)
+	(wire
+		(pts
+			(xy 336.55 58.42) (xy 337.82 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ba1c2d6-a959-4fbe-a376-e4fec36c5aae")
+	)
+	(wire
+		(pts
+			(xy 250.19 233.68) (xy 269.24 233.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e0db062-008d-4618-9a7d-a17f7c7caf74")
+	)
+	(wire
+		(pts
+			(xy 128.27 177.8) (xy 140.97 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f2d6bdd-9a56-4c6d-87ec-0b99494460c3")
+	)
+	(wire
+		(pts
+			(xy 64.77 137.16) (xy 64.77 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91678971-5bec-464f-816c-d1e9f90d8ccd")
+	)
+	(wire
+		(pts
+			(xy 300.99 177.8) (xy 302.26 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "939cdaf5-4f8f-4ae7-9587-6f99e5ea4fbd")
+	)
+	(wire
+		(pts
+			(xy 120.65 137.16) (xy 120.65 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95ac1b23-9b5f-4846-90b3-4c271295d6de")
+	)
+	(wire
+		(pts
+			(xy 236.22 152.4) (xy 236.22 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "970613a5-f99f-4b1d-ad9f-d1c99149a4af")
+	)
+	(wire
+		(pts
+			(xy 274.32 177.8) (xy 274.32 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97c25d1c-e99c-4bef-bd64-950d5007fd91")
+	)
+	(wire
+		(pts
+			(xy 128.27 213.36) (xy 140.97 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99c55570-e44d-4d13-9ab2-0038c9863567")
+	)
+	(wire
+		(pts
+			(xy 236.22 203.2) (xy 236.22 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99c9f95b-e7b6-4dc5-954b-68db55e5a8b4")
+	)
+	(wire
+		(pts
+			(xy 100.33 146.05) (xy 113.03 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d2dd575-3545-44d1-b3ec-4a9c88373548")
+	)
+	(wire
+		(pts
+			(xy 140.97 58.42) (xy 156.21 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9dab8186-dc8e-4e93-b6ee-016a2f50e836")
+	)
+	(wire
+		(pts
+			(xy 307.34 157.48) (xy 326.39 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e911d8c-5123-4c3a-b590-75c62191df54")
+	)
+	(wire
+		(pts
+			(xy 320.04 177.8) (xy 321.31 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f89e8d9-c487-4f93-996b-5fa15fe04111")
+	)
+	(wire
+		(pts
+			(xy 262.89 228.6) (xy 264.16 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0bc0b70-de00-4afa-8cb3-863ba0454960")
+	)
+	(wire
+		(pts
+			(xy 300.99 203.2) (xy 302.26 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0f997f8-0662-4df9-b03b-417ffcd7b852")
+	)
+	(wire
+		(pts
+			(xy 300.99 152.4) (xy 302.26 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a34dae2b-1b8f-4444-b6b8-510ca7fa63a2")
+	)
+	(wire
+		(pts
+			(xy 64.77 153.67) (xy 64.77 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3be29c4-f946-4144-b8d4-8679c306e164")
+	)
+	(wire
+		(pts
+			(xy 148.59 137.16) (xy 176.53 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6380407-829b-4df0-a733-3b5eaf2f74cc")
+	)
+	(wire
+		(pts
+			(xy 288.29 157.48) (xy 307.34 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a674ab69-1727-4b39-b3bb-9a8f2ecf576c")
+	)
+	(wire
+		(pts
+			(xy 64.77 161.29) (xy 64.77 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8303d7f-358f-4ae4-8f42-d7868ab6f90c")
+	)
+	(wire
+		(pts
+			(xy 148.59 220.98) (xy 148.59 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa94d1f8-7323-4d30-9531-d45936a3f86c")
+	)
+	(wire
+		(pts
+			(xy 176.53 252.73) (xy 200.66 252.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aad03364-f035-4c8c-a4a0-da5104911769")
+	)
+	(wire
+		(pts
+			(xy 176.53 137.16) (xy 176.53 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad6a92cc-21ab-4e09-bc4e-3934e1327242")
+	)
+	(wire
+		(pts
+			(xy 320.04 152.4) (xy 321.31 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad845afa-2e6f-4d7d-b8f2-c7aa73b13540")
+	)
+	(wire
+		(pts
+			(xy 92.71 228.6) (xy 120.65 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af234e0a-2639-4838-84e4-dba990a26554")
+	)
+	(wire
+		(pts
+			(xy 148.59 161.29) (xy 176.53 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b21ccd46-0511-4c92-bc5a-322e1059ade9")
+	)
+	(wire
+		(pts
+			(xy 46.99 195.58) (xy 50.8 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2ea14e2-6002-40f8-a1e1-2fdd2d533a72")
+	)
+	(wire
+		(pts
+			(xy 92.71 161.29) (xy 120.65 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3575f89-feb8-4384-b979-8901c05d226e")
+	)
+	(wire
+		(pts
+			(xy 176.53 220.98) (xy 176.53 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3f78f55-f996-4231-96f5-8c89abcb2927")
+	)
+	(wire
+		(pts
+			(xy 200.66 252.73) (xy 200.66 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b43e1acd-0ee0-4a0a-b097-edab16fdbd77")
+	)
+	(wire
+		(pts
+			(xy 72.39 243.84) (xy 85.09 243.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b46ded38-9a66-49c7-8474-3a60f5eae20e")
+	)
+	(wire
+		(pts
+			(xy 262.89 152.4) (xy 264.16 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b554274c-f2b5-413a-88d8-ce5753afd9b5")
+	)
+	(wire
+		(pts
+			(xy 288.29 182.88) (xy 307.34 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b64cdd8b-171e-459d-8956-ae5625225af0")
+	)
+	(wire
+		(pts
+			(xy 176.53 228.6) (xy 176.53 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7d62d71-b6fd-4e2d-8878-700555fe5a01")
+	)
+	(wire
+		(pts
+			(xy 156.21 243.84) (xy 168.91 243.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b96200b1-528a-49ae-bc6a-827830844bc5")
+	)
+	(wire
+		(pts
+			(xy 148.59 137.16) (xy 148.59 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc068b3e-d001-4af7-b1f3-26ef775f031c")
+	)
+	(wire
+		(pts
+			(xy 312.42 132.08) (xy 312.42 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd0907ac-dfe4-4465-a738-47a803da6b8f")
+	)
+	(wire
+		(pts
+			(xy 50.8 228.6) (xy 50.8 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd8bc919-a5ca-4d6d-b4cd-3dba6ba9434f")
+	)
+	(wire
+		(pts
+			(xy 129.54 46.99) (xy 129.54 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0c308cd-099e-4000-807f-3b5482486d90")
+	)
+	(wire
+		(pts
+			(xy 339.09 43.18) (xy 336.55 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c44b7877-74c4-4010-87ff-c8c06919f1a6")
+	)
+	(wire
+		(pts
+			(xy 255.27 132.08) (xy 255.27 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4ed3193-2bf0-4c6d-857e-2ffad99a7531")
+	)
+	(wire
+		(pts
+			(xy 337.82 59.69) (xy 339.09 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c709d112-f21c-46f9-83e3-02f9952308e6")
+	)
+	(wire
+		(pts
+			(xy 120.65 220.98) (xy 120.65 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9209926-6fa5-4e9a-84ac-8be785f7fcc1")
+	)
+	(wire
+		(pts
+			(xy 326.39 157.48) (xy 358.14 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c925fa7d-d5a6-4c38-a76f-11099cb0d725")
+	)
+	(wire
+		(pts
+			(xy 128.27 49.53) (xy 129.54 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9cf0226-680d-4c6d-a762-dae8f1356b90")
+	)
+	(wire
+		(pts
+			(xy 120.65 252.73) (xy 148.59 252.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "caf29aa8-9743-4107-915b-e9fbd76fb799")
+	)
+	(wire
+		(pts
+			(xy 250.19 182.88) (xy 269.24 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc216062-7beb-402c-addf-8e517cadef6e")
+	)
+	(wire
+		(pts
+			(xy 148.59 228.6) (xy 176.53 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ccd66c71-e6bd-458c-8865-8a99d4055145")
+	)
+	(wire
+		(pts
+			(xy 92.71 195.58) (xy 92.71 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd8546ca-6ecd-4a37-8a68-99630771f10c")
+	)
+	(wire
+		(pts
+			(xy 200.66 195.58) (xy 200.66 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cfd7f2de-fba7-43da-8f54-5d41a6434bb3")
+	)
+	(wire
+		(pts
+			(xy 255.27 203.2) (xy 255.27 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d188be11-8430-4713-bc1a-4c515783e186")
+	)
+	(wire
+		(pts
+			(xy 64.77 228.6) (xy 50.8 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2644c15-2f50-4e2e-a43f-df5edb457cbd")
+	)
+	(wire
+		(pts
+			(xy 64.77 137.16) (xy 92.71 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3cc55c2-95b8-4f4c-9de4-5c26aac2710d")
+	)
+	(wire
+		(pts
+			(xy 337.82 58.42) (xy 337.82 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d54e0d77-763b-4986-aa5c-18dd3735268c")
+	)
+	(wire
+		(pts
+			(xy 72.39 213.36) (xy 85.09 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d59d04e1-6117-4745-8100-0b7928e3852e")
+	)
+	(wire
+		(pts
+			(xy 64.77 195.58) (xy 64.77 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7f8148d-40a0-479a-82d2-7babe229187e")
+	)
+	(wire
+		(pts
+			(xy 120.65 67.31) (xy 120.65 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8f3a2a7-7df1-4b86-929a-9aeb8773b73d")
+	)
+	(wire
+		(pts
+			(xy 269.24 233.68) (xy 288.29 233.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dae5e10f-0d92-4cf1-b732-568b7860605f")
+	)
+	(wire
+		(pts
+			(xy 281.94 177.8) (xy 283.21 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db9da017-ed36-430d-880a-5af6c036fddb")
+	)
+	(wire
+		(pts
+			(xy 293.37 177.8) (xy 293.37 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de4de3b7-9950-458a-acfa-38a167940430")
+	)
+	(wire
+		(pts
+			(xy 326.39 208.28) (xy 345.44 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df715408-be76-4462-9ab1-127c2fc7fd71")
+	)
+	(wire
+		(pts
+			(xy 339.09 203.2) (xy 340.36 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2492bfd-c609-485b-9c77-6d774a5b1e69")
+	)
+	(wire
+		(pts
+			(xy 269.24 157.48) (xy 288.29 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e36f13cc-5e4b-4b9d-939b-106d0cc0f1ef")
+	)
+	(wire
+		(pts
+			(xy 262.89 177.8) (xy 264.16 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6ce0f8c-11cb-41db-a8c7-cb52756fd6e8")
+	)
+	(wire
+		(pts
+			(xy 100.33 213.36) (xy 113.03 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e71341f6-e26a-479d-89cb-08bbf4493332")
+	)
+	(wire
+		(pts
+			(xy 120.65 195.58) (xy 148.59 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ebba3ee6-514b-436d-bf72-ebc2b5578efe")
+	)
+	(wire
+		(pts
+			(xy 288.29 233.68) (xy 300.99 233.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ebd8138e-adfd-4b0a-a7a4-d1c35c3a6d71")
+	)
+	(wire
+		(pts
+			(xy 92.71 185.42) (xy 92.71 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed314b3e-009e-45c6-8ef2-a6f22e5c0d69")
+	)
+	(wire
+		(pts
+			(xy 92.71 137.16) (xy 92.71 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edb0ba0c-6d71-4f88-a2d3-92d97d9cce4c")
+	)
+	(wire
+		(pts
+			(xy 57.15 177.8) (xy 57.15 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f09f417d-fd69-4689-abc5-42ca981dc39a")
+	)
+	(wire
+		(pts
+			(xy 119.38 76.2) (xy 119.38 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f15b3e00-bd41-4cd7-b410-11e4a04ad11c")
+	)
+	(wire
+		(pts
+			(xy 288.29 208.28) (xy 307.34 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1b14b9d-3abe-46ea-be2c-94181fd303f7")
+	)
+	(wire
+		(pts
+			(xy 281.94 228.6) (xy 283.21 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fcaccc35-c659-46ab-a4b6-ab470ca6bd3d")
+	)
+	(wire
+		(pts
+			(xy 120.65 64.77) (xy 121.92 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd8ab287-ba7b-46c0-9bd4-5c319711e788")
+	)
+	(global_label "5v R"
+		(shape input)
+		(at 46.99 195.58 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2a68ba58-02a8-4981-8ab3-fa726dbd3b10")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 39.5901 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D27 R"
+		(shape input)
+		(at 293.37 132.08 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "491bc6b8-5d31-426f-a416-221af05e983d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 293.37 123.1682 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Motor - R"
+		(shape input)
+		(at 128.27 58.42 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "513247c7-ff05-4527-8d8b-c96f4bedce82")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 115.2459 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND R"
+		(shape input)
+		(at 317.5 83.82 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "540b4b8d-c9f5-440b-8e06-34c0e38cd0c1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 317.5 92.9133 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D5 R"
+		(shape input)
+		(at 358.14 182.88 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6f4e8ae7-52f3-4363-8469-5d1024b105a1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 365.8423 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND R"
+		(shape input)
+		(at 129.54 72.39 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "78a070b5-6fa3-4e07-b77f-4b4e28b662b2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 129.54 81.4833 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D26 R"
+		(shape input)
+		(at 274.32 132.08 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "81a0d8b2-f26e-4b98-b1a0-f1f8577ab673")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 274.32 123.1682 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D0 R"
+		(shape input)
+		(at 53.34 243.84 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8704697f-45b4-43f1-951e-bc9d48cb2447")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 45.6377 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND R"
+		(shape input)
+		(at 207.01 195.58 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8dd3a6c1-8b60-44be-a96e-30060c98cbdb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 216.1033 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D8 R"
+		(shape input)
+		(at 109.22 67.31 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "927d0381-20d1-4b09-bbf7-a54e53c8f2c3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 101.5177 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND R"
+		(shape input)
+		(at 119.38 77.47 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b96251aa-e10f-465a-98ec-f496707f8df5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 119.38 86.5633 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "5v R"
+		(shape input)
+		(at 129.54 46.99 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d8b5cacb-c60c-43b5-8743-4f39b65c5113")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 129.54 39.5901 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "5v R"
+		(shape input)
+		(at 339.09 43.18 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "da357dda-72c2-4419-b92f-e8c14fd44d47")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 346.4899 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D9 R"
+		(shape input)
+		(at 339.09 59.69 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "dc76316e-09fa-4c7e-8003-394c772bdbf9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 346.7923 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D22 R"
+		(shape input)
+		(at 255.27 132.08 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "de616468-a9df-41a6-be8f-9e0c5f2f51ad")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 255.27 123.1682 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D7 R"
+		(shape input)
+		(at 300.99 233.68 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "df10f118-89cb-4f37-949c-813b096baa60")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 308.6923 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D6 R"
+		(shape input)
+		(at 358.14 208.28 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e019c562-e028-4eee-bead-24de22c111c1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 365.8423 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D4 R"
+		(shape input)
+		(at 358.14 157.48 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e9c74d64-55a1-489b-8f83-35d45bd24deb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 365.8423 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Motor + R"
+		(shape input)
+		(at 128.27 49.53 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ea5ef8e5-468d-4c35-a5bb-48e675e235b9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 115.2459 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D28 R"
+		(shape input)
+		(at 312.42 132.08 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ec4f5981-0923-4a34-9bbc-ece77da2b3a1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 312.42 123.1682 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D20 R"
+		(shape input)
+		(at 236.22 132.08 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f368cca6-5264-4a68-93c8-58f71ee972bb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 236.22 123.1682 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D29 R"
+		(shape input)
+		(at 331.47 132.08 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f36f0b33-0edf-40d8-8698-c61a8b207231")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 331.47 123.1682 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Diode")
+		(at 335.28 203.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "052d34b1-8298-4ff1-b032-16eaaca3d5d4")
+		(property "Reference" "D81"
+			(at 335.28 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Diode"
+			(at 335.28 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:Diode_SOD-123"
+			(at 335.28 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 335.28 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1N4148 (DO-35) or 1N4148W (SOD-123)"
+			(at 335.28 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 335.28 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 335.28 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ec358423-3d9d-40d6-a471-6d55144e7ac9")
+		)
+		(pin "1"
+			(uuid "cdf74e78-9b23-4f7e-8ac1-bacced456c1b")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "D81")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 247.65 231.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "14eac342-728d-4eb8-af4d-82ecd6e5cecb")
+		(property "Reference" "S32"
+			(at 247.65 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 247.65 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "JacobGable:MX_Choc_Hotswap_Hybrid"
+			(at 247.65 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 247.65 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 247.65 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6a021b21-0373-4c11-92ea-57e31446bff2")
+		)
+		(pin "2"
+			(uuid "fe0ee925-2d86-4d4f-a197-1f3a7c462909")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "S32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 266.7 180.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "15f3359d-f73e-4ec1-a1e8-5bfb3b07eb74")
+		(property "Reference" "S24"
+			(at 266.7 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 266.7 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "JacobGable:MX_Choc_Hotswap_Hybrid"
+			(at 266.7 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 266.7 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 266.7 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ef14bc77-ae15-47e1-9773-5e03300df5fc")
+		)
+		(pin "2"
+			(uuid "3c2a04b8-9ccb-462d-9339-df0d11fdcba5")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "S24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Mounting_Hole")
+		(at 215.9 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "165e7423-fcec-4c70-8e38-aed68c43e4ad")
+		(property "Reference" "H7"
+			(at 218.44 57.1499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Mounting_Hole"
+			(at 218.44 59.6899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4"
+			(at 215.9 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 215.9 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 215.9 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "H7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:LED_SK6812MINI")
+		(at 92.71 243.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1c80a308-1167-48bb-b547-3d6dd935448e")
+		(property "Reference" "D49"
+			(at 106.68 234.9814 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_SK6812MINI"
+			(at 106.68 237.5214 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:LED_SK6812MINI"
+			(at 93.98 251.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+			(at 93.98 255.016 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 110.998 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5149201"
+			(at 106.68 240.0614 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "04acc47b-be6e-41f8-a42d-5fd13c6ccb43")
+		)
+		(pin "1"
+			(uuid "7b90887e-34e3-486b-9c95-5bca4c41e9ed")
+		)
+		(pin "2"
+			(uuid "a9399227-b2a1-48c8-9b20-34c3cdd66d49")
+		)
+		(pin "3"
+			(uuid "1b59fde7-cef5-46c9-b9dd-b8711e3b4a90")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "D49")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 119.38 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1f699916-c163-4c77-88dd-f488d1305c52")
+		(property "Reference" "R10"
+			(at 121.92 72.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100k"
+			(at 121.92 74.9299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 119.38 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 119.38 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 119.38 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "edcb9a7d-45e1-4693-b33e-bb3987a2fe87")
+		)
+		(pin "2"
+			(uuid "36626c2e-aba7-4d52-8461-795268d9def1")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:LED_SK6812MINI")
+		(at 148.59 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "217a371c-976c-46b0-a439-af5dfb607eaf")
+		(property "Reference" "D56"
+			(at 162.56 168.9414 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_SK6812MINI"
+			(at 162.56 171.4814 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:LED_SK6812MINI"
+			(at 149.86 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+			(at 149.86 188.976 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 166.878 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5149201"
+			(at 162.56 174.0214 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "54907c3c-e3de-44d9-a0ad-81ce54c1ec7a")
+		)
+		(pin "1"
+			(uuid "8d642db4-0a05-4bfc-8fe8-bd32d1614bac")
+		)
+		(pin "2"
+			(uuid "b82bbf6f-46aa-492d-87df-a81e96dd2f62")
+		)
+		(pin "3"
+			(uuid "e6cffc50-f40a-4452-9dcc-1d41e52958e3")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "D56")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Diode")
+		(at 278.13 203.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "246e17a7-cf85-4d5f-bbb5-d96b883f660c")
+		(property "Reference" "D70"
+			(at 278.13 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Diode"
+			(at 278.13 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:Diode_SOD-123"
+			(at 278.13 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 278.13 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1N4148 (DO-35) or 1N4148W (SOD-123)"
+			(at 278.13 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 278.13 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 278.13 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "62c1d374-ab98-4ba2-aaa3-238a5555d9ba")
+		)
+		(pin "1"
+			(uuid "8acbfcfa-dfa0-4793-87da-c2bd8be19245")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "D70")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 156.21 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "26eff399-5a65-4571-853d-0dc21b2dde43")
+		(property "Reference" "M7"
+			(at 158.75 44.9579 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Motor 2 +"
+			(at 158.75 47.4979 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_2.5x2.5mm"
+			(at 161.29 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 161.29 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 156.21 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1194a347-8773-477e-8400-273d942f29ff")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "M7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:LED_SK6812MINI")
+		(at 120.65 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2d36c136-6b06-410b-914e-6619158ad1c5")
+		(property "Reference" "D51"
+			(at 134.62 168.9414 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_SK6812MINI"
+			(at 134.62 171.4814 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:LED_SK6812MINI"
+			(at 121.92 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+			(at 121.92 188.976 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 138.938 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5149201"
+			(at 134.62 174.0214 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "7680ac2c-5a41-4844-839d-f30c332efb52")
+		)
+		(pin "1"
+			(uuid "c75e8263-b2ec-4abb-8e7b-40b3a91d9a9a")
+		)
+		(pin "2"
+			(uuid "4a9f5ad1-6d8c-440f-8131-dfb0526db02f")
+		)
+		(pin "3"
+			(uuid "f086ca63-80c4-43e3-a72e-541443c80492")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "D51")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:LED_SK6812MINI")
+		(at 176.53 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4089e7ed-db32-4835-9201-c59856cac81f")
+		(property "Reference" "D60"
+			(at 190.5 168.9414 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_SK6812MINI"
+			(at 190.5 171.4814 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:LED_SK6812MINI"
+			(at 177.8 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+			(at 177.8 188.976 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 194.818 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5149201"
+			(at 190.5 174.0214 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "56e91851-36f2-4584-b85d-f4455e9f93d2")
+		)
+		(pin "1"
+			(uuid "24e77b40-98ff-4b2e-abab-6f9cca8aaf0d")
+		)
+		(pin "2"
+			(uuid "61689ba1-8aa2-4ef2-96e6-364f2b0ee53d")
+		)
+		(pin "3"
+			(uuid "1df9b21f-259b-46fd-a57a-be1fd5b5b7b0")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "D60")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:LED_SK6812MINI")
+		(at 64.77 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "44e429bf-1ae1-48dc-8bb4-929bc82f12ac")
+		(property "Reference" "D43"
+			(at 78.74 168.9414 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_SK6812MINI"
+			(at 78.74 171.4814 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:LED_SK6812MINI"
+			(at 66.04 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+			(at 66.04 188.976 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 83.058 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5149201"
+			(at 78.74 174.0214 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "ce42adc3-9941-4336-aeb9-a38ad506818a")
+		)
+		(pin "1"
+			(uuid "121aa6f9-f2c4-4699-8cfc-af006d95ee0c")
+		)
+		(pin "2"
+			(uuid "ac3abb9c-0b29-48c1-a38e-256a047e607b")
+		)
+		(pin "3"
+			(uuid "0fda19eb-72c2-4b19-898f-3222d62e3e2f")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "D43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 304.8 154.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "45052070-2305-4806-9b46-1657ef747358")
+		(property "Reference" "S33"
+			(at 303.53 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 304.8 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "JacobGable:MX_Choc_Hotswap_Hybrid"
+			(at 304.8 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 304.8 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 304.8 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1219fe3c-6da4-4ca3-85c5-512b7249089c")
+		)
+		(pin "2"
+			(uuid "2263b998-b1b1-40bd-be76-8e0181adb00d")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "S33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:LED_SK6812MINI")
+		(at 92.71 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4890e4f3-ee25-42a3-933f-4b20cfeb7066")
+		(property "Reference" "D47"
+			(at 106.68 168.9414 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_SK6812MINI"
+			(at 106.68 171.4814 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:LED_SK6812MINI"
+			(at 93.98 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+			(at 93.98 188.976 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 110.998 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5149201"
+			(at 106.68 174.0214 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "e275eb3a-23a0-496a-a4f1-21d0d116ec4a")
+		)
+		(pin "1"
+			(uuid "4874a9b4-48b9-48a8-a198-707262956528")
+		)
+		(pin "2"
+			(uuid "28e6b658-7e6e-4c4d-90d4-2cad10bf09d1")
+		)
+		(pin "3"
+			(uuid "b1e684f2-0d62-4690-8b51-417b3ebd9041")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "D47")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 140.97 58.42 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4acbdb55-2ccd-4a51-b0da-481469f2f303")
+		(property "Reference" "M6"
+			(at 143.51 60.4519 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Motor 1 -"
+			(at 143.51 62.9919 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_2.5x2.5mm"
+			(at 135.89 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 135.89 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 140.97 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2e2d7aae-ef1f-4aa6-b3f8-0a033add0e20")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "M6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Diode")
+		(at 240.03 228.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4f34beef-80d9-460f-8fb4-415de5d86cac")
+		(property "Reference" "D74"
+			(at 240.03 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Diode"
+			(at 240.03 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:Diode_SOD-123"
+			(at 240.03 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 240.03 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1N4148 (DO-35) or 1N4148W (SOD-123)"
+			(at 240.03 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 240.03 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 240.03 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "879b656f-4fa0-4e76-85b9-9b0ba532d10e")
+		)
+		(pin "1"
+			(uuid "59d82299-ccf6-4dd5-a1c4-96fb61bd4a5e")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "D74")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Diode")
+		(at 240.03 152.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4f9cc000-9aae-499b-a3f7-b78f21134606")
+		(property "Reference" "D65"
+			(at 240.03 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Diode"
+			(at 240.03 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:Diode_SOD-123"
+			(at 240.03 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 240.03 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1N4148 (DO-35) or 1N4148W (SOD-123)"
+			(at 240.03 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 240.03 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 240.03 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "efdde8b3-75d0-4249-890b-61582fca52fa")
+		)
+		(pin "1"
+			(uuid "4edf20db-46ec-4969-8bdd-c1659a4b94bb")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "D65")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:LED_SK6812MINI")
+		(at 176.53 213.36 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "56d8d582-517b-4182-878b-33fc197350bf")
+		(property "Reference" "D61"
+			(at 162.56 222.2186 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_SK6812MINI"
+			(at 162.56 219.6786 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:LED_SK6812MINI"
+			(at 175.26 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+			(at 175.26 202.184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 158.242 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5149201"
+			(at 162.56 217.1386 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "10875ea8-8311-4c7f-b918-c0aba39c09b8")
+		)
+		(pin "1"
+			(uuid "bd770b68-577e-4d0f-830e-6652aee26b86")
+		)
+		(pin "2"
+			(uuid "e63ad60a-6f09-4493-aa54-ea3fc9df1c0d")
+		)
+		(pin "3"
+			(uuid "dc75579f-7872-483a-bdf9-ca187129eb1a")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "D61")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Diode")
+		(at 297.18 203.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5d0d5708-0f48-4cf8-8202-cbca6fb273a3")
+		(property "Reference" "D73"
+			(at 297.18 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Diode"
+			(at 297.18 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:Diode_SOD-123"
+			(at 297.18 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 297.18 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1N4148 (DO-35) or 1N4148W (SOD-123)"
+			(at 297.18 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 297.18 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 297.18 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "dc0ea336-0bb7-475f-b5a2-51b6a1e5477e")
+		)
+		(pin "1"
+			(uuid "a75531d5-e7ef-4639-8267-fe7584389a89")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "D73")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Diode")
+		(at 259.08 228.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5d96c120-0f6d-4290-a2e6-1a297908c925")
+		(property "Reference" "D78"
+			(at 259.08 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Diode"
+			(at 259.08 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:Diode_SOD-123"
+			(at 259.08 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 259.08 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1N4148 (DO-35) or 1N4148W (SOD-123)"
+			(at 259.08 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 259.08 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 259.08 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8aad6c87-b305-4d29-981b-c0a260ce276e")
+		)
+		(pin "1"
+			(uuid "473cc8ad-5caf-4a41-8f17-039ee436d5db")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "D78")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:LED_SK6812MINI")
+		(at 64.77 146.05 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5e92307b-500a-4784-a848-66766221b148")
+		(property "Reference" "D42"
+			(at 50.8 154.9086 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_SK6812MINI"
+			(at 50.8 152.3686 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:LED_SK6812MINI"
+			(at 63.5 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+			(at 63.5 134.874 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 46.482 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5149201"
+			(at 50.8 149.8286 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "25af1689-b45b-4d36-9a3f-9915f7933527")
+		)
+		(pin "1"
+			(uuid "5448d7a9-eaed-408d-83e6-2297cb5cef52")
+		)
+		(pin "2"
+			(uuid "3a2de743-725d-414f-82fa-f5f5f36f91dd")
+		)
+		(pin "3"
+			(uuid "aaeb77fe-d585-411e-a5e0-829444d051aa")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "D42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 247.65 154.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "614c2d5a-4588-4e6c-baa7-064b1818a77a")
+		(property "Reference" "S23"
+			(at 246.38 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 247.65 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "JacobGable:MX_Choc_Hotswap_Hybrid"
+			(at 247.65 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 247.65 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 247.65 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "98b3d318-d0fb-44e8-98a3-74ef03cb5e2d")
+		)
+		(pin "2"
+			(uuid "c70927bb-a3ab-4c54-be74-b91cc173482a")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "S23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 342.9 205.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6309a603-5d29-4946-87fd-d2f986afa600")
+		(property "Reference" "S39"
+			(at 342.9 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 342.9 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "JacobGable:MX_Choc_Hotswap_Hybrid"
+			(at 342.9 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 342.9 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 342.9 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "81cf3128-7503-4b94-9fa1-f60a6faaacac")
+		)
+		(pin "2"
+			(uuid "85cf5cc4-608a-4eb0-872e-8855a5f8bfd7")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "S39")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:LED_SK6812MINI")
+		(at 148.59 243.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "682f9194-f0d9-4042-9360-49413af88ce2")
+		(property "Reference" "D58"
+			(at 162.56 234.9814 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_SK6812MINI"
+			(at 162.56 237.5214 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:LED_SK6812MINI"
+			(at 149.86 251.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+			(at 149.86 255.016 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 166.878 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5149201"
+			(at 162.56 240.0614 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "916c6c0e-4f84-4710-96b4-4e6e5d54236f")
+		)
+		(pin "1"
+			(uuid "01e118c6-7e10-4355-8843-809bc946af73")
+		)
+		(pin "2"
+			(uuid "1a52689e-67bd-4c5b-8385-e6cb3a6cb251")
+		)
+		(pin "3"
+			(uuid "5702b881-13b0-4c0f-bd7d-f4e48bc32eb2")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "D58")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 285.75 180.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "69659490-0517-4f4f-81d1-21531cf960aa")
+		(property "Reference" "S27"
+			(at 285.75 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 285.75 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "JacobGable:MX_Choc_Hotswap_Hybrid"
+			(at 285.75 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 285.75 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 285.75 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4eafa70e-8c86-4978-b908-c97d93c0f25b")
+		)
+		(pin "2"
+			(uuid "96108fa5-a4ea-4eb8-8e2f-4ba0a0d18ff0")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "S27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:LED_SK6812MINI")
+		(at 92.71 146.05 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "69cf80f4-d5dc-4c1c-96f0-a507188b65df")
+		(property "Reference" "D46"
+			(at 78.74 154.9086 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_SK6812MINI"
+			(at 78.74 152.3686 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:LED_SK6812MINI"
+			(at 91.44 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+			(at 91.44 134.874 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 74.422 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5149201"
+			(at 78.74 149.8286 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "cc901fe1-d473-413b-941e-b63567591a08")
+		)
+		(pin "1"
+			(uuid "53dea4f9-9a4a-44da-b289-b7a999be42c0")
+		)
+		(pin "2"
+			(uuid "8fcdfad1-d592-406d-aa5b-cc5e8801ff91")
+		)
+		(pin "3"
+			(uuid "3422f6fc-d5a9-4674-9bdf-ca5d1d61a863")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "D46")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Mounting_Hole")
+		(at 215.9 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6b03e271-5286-4feb-8bc4-29c24fea3a4c")
+		(property "Reference" "H9"
+			(at 218.44 69.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Mounting_Hole"
+			(at 218.44 72.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4"
+			(at 215.9 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 215.9 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 215.9 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "H9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Diode")
+		(at 240.03 203.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6e313d16-87fc-4fe8-8923-2032212120f6")
+		(property "Reference" "D64"
+			(at 240.03 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Diode"
+			(at 240.03 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:Diode_SOD-123"
+			(at 240.03 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 240.03 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1N4148 (DO-35) or 1N4148W (SOD-123)"
+			(at 240.03 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 240.03 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 240.03 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "bd365316-8bd7-41d0-896d-85602f78321f")
+		)
+		(pin "1"
+			(uuid "99a19ccf-a5cf-4ed5-9b43-5eb6c41f03f4")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "D64")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Diode")
+		(at 335.28 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "726c955c-3061-44c4-ba56-e00fd644f5f3")
+		(property "Reference" "D80"
+			(at 335.28 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Diode"
+			(at 335.28 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:Diode_SOD-123"
+			(at 335.28 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 335.28 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1N4148 (DO-35) or 1N4148W (SOD-123)"
+			(at 335.28 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 335.28 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 335.28 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "95c21572-8f08-4c7e-9f12-4c3851f69393")
+		)
+		(pin "1"
+			(uuid "368b8523-0f1b-4283-a9cd-d2a8840899c2")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "D80")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Mounting_Hole")
+		(at 215.9 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "75cf5e33-31a6-4013-adbc-bb191577c7d8")
+		(property "Reference" "H10"
+			(at 218.44 76.1999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Mounting_Hole"
+			(at 218.44 78.7399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4"
+			(at 215.9 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 215.9 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 215.9 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "H10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:USB_C_Receptacle_USB2.0_16P")
+		(at 321.31 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "766fca44-7662-40fe-b43e-ba7908a95946")
+		(property "Reference" "J3"
+			(at 321.31 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "USB_C_Receptacle_USB2.0_16P"
+			(at 321.31 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12"
+			(at 325.12 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
+			(at 325.12 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
+			(at 321.31 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "A6"
+			(uuid "f6a2f4cd-32b6-4063-8727-2aad6c07a8b0")
+		)
+		(pin "A7"
+			(uuid "2c623ce3-9870-4c67-abc9-d02360b49384")
+		)
+		(pin "A8"
+			(uuid "56e1a43b-dcc9-4540-9588-635e2359b3d9")
+		)
+		(pin "B7"
+			(uuid "627cfe2d-2821-458d-8d45-9d72d06d8ded")
+		)
+		(pin "B9"
+			(uuid "b3ded316-ab80-48e3-a6c9-e12115ce8f8b")
+		)
+		(pin "B6"
+			(uuid "e6974e4f-a301-4350-8ee4-da5c772a7a9b")
+		)
+		(pin "B8"
+			(uuid "48727118-3b26-433d-a9f9-0189f8e8985e")
+		)
+		(pin "A4"
+			(uuid "6469dffe-6780-4f9f-b4b2-d15dcc693f65")
+		)
+		(pin "B5"
+			(uuid "aa7aba4d-33b3-4c11-8e0a-bf41ad4cfd36")
+		)
+		(pin "B1"
+			(uuid "e4231d4c-12ec-40ef-bd50-c53557b127d8")
+		)
+		(pin "A1"
+			(uuid "e1c47e48-d045-4de7-9d8e-79af53a8cd66")
+		)
+		(pin "A5"
+			(uuid "84a2ecd7-c584-4e93-8503-741120ca6055")
+		)
+		(pin "A12"
+			(uuid "3093ca0e-af07-433c-98da-0067e4d14e22")
+		)
+		(pin "B12"
+			(uuid "cf6a8b61-a988-4c5e-b220-d8049a5934fa")
+		)
+		(pin "S1"
+			(uuid "1ad5a52c-cb8c-49d6-99e2-9fbaf678a414")
+		)
+		(pin "B4"
+			(uuid "86e3eec8-3e75-4ed3-a3fb-6d0adad86dce")
+		)
+		(pin "A9"
+			(uuid "347b7dd5-4658-4452-a0ff-9fe7a11bb313")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Diode")
+		(at 297.18 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "785cf9ac-9986-4c9e-94ff-ae8a2d947595")
+		(property "Reference" "D72"
+			(at 297.18 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Diode"
+			(at 297.18 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:Diode_SOD-123"
+			(at 297.18 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 297.18 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1N4148 (DO-35) or 1N4148W (SOD-123)"
+			(at 297.18 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 297.18 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 297.18 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "320442ae-887f-4914-9c24-2b5201ad3d41")
+		)
+		(pin "1"
+			(uuid "e5e24936-c093-425b-9b2b-50841fcb9f91")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "D72")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:LED_SK6812MINI")
+		(at 120.65 146.05 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7af79f8e-2642-42a5-87a9-4b7ebc6202e7")
+		(property "Reference" "D50"
+			(at 106.68 154.9086 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_SK6812MINI"
+			(at 106.68 152.3686 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:LED_SK6812MINI"
+			(at 119.38 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+			(at 119.38 134.874 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 102.362 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5149201"
+			(at 106.68 149.8286 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "3fe36f89-69b9-4cbc-9db2-d2d35f8e7166")
+		)
+		(pin "1"
+			(uuid "c1ad9134-2a9e-4e37-8d56-62cfef98723f")
+		)
+		(pin "2"
+			(uuid "997b835e-abc6-44ab-a197-0b115b09828f")
+		)
+		(pin "3"
+			(uuid "0e45923e-117d-4356-be98-0e6d1d34b91e")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "D50")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Diode")
+		(at 240.03 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "86025428-dc21-4cc4-bb46-549d51c5ceee")
+		(property "Reference" "D63"
+			(at 240.03 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Diode"
+			(at 240.03 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:Diode_SOD-123"
+			(at 240.03 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 240.03 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1N4148 (DO-35) or 1N4148W (SOD-123)"
+			(at 240.03 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 240.03 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 240.03 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0d220872-9782-4b72-a231-5bfe6edaad9e")
+		)
+		(pin "1"
+			(uuid "5548c540-f2d9-407a-977e-51e85fba4e53")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "D63")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:LED_SK6812MINI")
+		(at 64.77 213.36 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "861a61f1-4a24-446b-93c6-6906c9010e1e")
+		(property "Reference" "D44"
+			(at 50.8 222.2186 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_SK6812MINI"
+			(at 50.8 219.6786 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:LED_SK6812MINI"
+			(at 63.5 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+			(at 63.5 202.184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 46.482 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5149201"
+			(at 50.8 217.1386 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "2f2a422e-98e9-476e-bcb7-bd377aa869b3")
+		)
+		(pin "1"
+			(uuid "761916d3-5666-46a1-9789-9f416252de78")
+		)
+		(pin "2"
+			(uuid "e3bb11e5-68b0-4ee1-b197-af70638fccce")
+		)
+		(pin "3"
+			(uuid "cb2709b9-e39f-44f0-b3ad-15c8395c9a19")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "D44")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 304.8 180.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8bf6e159-0916-4287-9566-abd7e8faf0d0")
+		(property "Reference" "S30"
+			(at 304.8 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 304.8 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "JacobGable:MX_Choc_Hotswap_Hybrid"
+			(at 304.8 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 304.8 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 304.8 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1d3918a5-fae6-4efe-bec6-dde72aa53a3c")
+		)
+		(pin "2"
+			(uuid "434e6cd3-e560-495f-aad7-6d3da8fea428")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "S30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 285.75 231.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "937d98d0-35b0-4020-ba10-742d0efd4831")
+		(property "Reference" "S40"
+			(at 285.75 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 285.75 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "JacobGable:MX_Choc_Hotswap_Hybrid"
+			(at 285.75 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 285.75 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 285.75 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7561dde1-f284-457c-a8a1-7a804b050ea2")
+		)
+		(pin "2"
+			(uuid "382089f6-c997-4195-b1f6-91f405fc57ec")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "S40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:AO3400A")
+		(at 127 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "95d187fc-cf67-4c6d-83b8-c95254676b4a")
+		(property "Reference" "Q2"
+			(at 133.35 63.4999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AO3400A"
+			(at 133.35 66.0399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 132.08 66.675 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
+			(at 132.08 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"
+			(at 127 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5ce69de8-2d4e-4073-b2a1-9e81837a27db")
+		)
+		(pin "3"
+			(uuid "8ef7e4fb-deac-41a8-8a1a-99096ffea52d")
+		)
+		(pin "1"
+			(uuid "81260245-9c50-451e-bc3f-13f467cb9ba1")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:LED_SK6812MINI")
+		(at 92.71 213.36 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9903e25a-b03e-4f10-be73-983fc7fd7e64")
+		(property "Reference" "D48"
+			(at 78.74 222.2186 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_SK6812MINI"
+			(at 78.74 219.6786 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:LED_SK6812MINI"
+			(at 91.44 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+			(at 91.44 202.184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 74.422 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5149201"
+			(at 78.74 217.1386 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "e8a86115-d906-4833-bd06-1512469cc462")
+		)
+		(pin "1"
+			(uuid "44978638-027c-4145-93b4-41f3d1b0c2e5")
+		)
+		(pin "2"
+			(uuid "336546ad-96e5-4fc4-8aff-030fae8d9111")
+		)
+		(pin "3"
+			(uuid "2dbb9e86-5202-438e-9d79-e908d526becc")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "D48")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Diode")
+		(at 316.23 152.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9977ce9b-0e1e-4d16-9942-53dab9709b80")
+		(property "Reference" "D79"
+			(at 316.23 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Diode"
+			(at 316.23 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:Diode_SOD-123"
+			(at 316.23 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 316.23 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1N4148 (DO-35) or 1N4148W (SOD-123)"
+			(at 316.23 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 316.23 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 316.23 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "83cd2428-54c2-43fd-9c6e-ecab6bd4e551")
+		)
+		(pin "1"
+			(uuid "9da5309c-0731-4ed4-bdc4-eb51f6e6dce7")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "D79")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:LED_SK6812MINI")
+		(at 64.77 243.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "99c70ba8-3866-48f3-b937-0ea057eb7ab2")
+		(property "Reference" "D45"
+			(at 78.74 234.9814 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_SK6812MINI"
+			(at 78.74 237.5214 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:LED_SK6812MINI"
+			(at 66.04 251.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+			(at 66.04 255.016 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 83.058 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5149201"
+			(at 78.74 240.0614 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "064cf1b9-f768-4fe1-a21d-9e7528c8d277")
+		)
+		(pin "1"
+			(uuid "d8dbfbab-6a7e-4744-8820-31d614a61059")
+		)
+		(pin "2"
+			(uuid "01f01e30-e54e-4f69-844e-3da1ee02afd7")
+		)
+		(pin "3"
+			(uuid "d32e8204-7654-485a-b32d-3ebb488edc65")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "D45")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Mounting_Hole")
+		(at 215.9 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9a883fde-5d3f-4296-822e-20cca55380d7")
+		(property "Reference" "H8"
+			(at 218.44 63.4999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Mounting_Hole"
+			(at 218.44 66.0399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4"
+			(at 215.9 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 215.9 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 215.9 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "H8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Diode")
+		(at 278.13 152.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9dba221c-374e-4e93-b1a0-0fb7eb0b0e1d")
+		(property "Reference" "D71"
+			(at 278.13 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Diode"
+			(at 278.13 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:Diode_SOD-123"
+			(at 278.13 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 278.13 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1N4148 (DO-35) or 1N4148W (SOD-123)"
+			(at 278.13 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 278.13 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 278.13 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "108c1563-3e60-49a3-9555-d5a3fd4859f1")
+		)
+		(pin "1"
+			(uuid "91347dbb-c87a-4c62-809a-ae66d6ef9676")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "D71")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 140.97 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9e054c97-d24c-4567-88b3-6a2624697755")
+		(property "Reference" "M5"
+			(at 143.51 44.9579 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Motor 1 +"
+			(at 143.51 47.4979 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_2.5x2.5mm"
+			(at 146.05 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 146.05 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 140.97 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "79780c4b-322b-4f44-823a-a3b82c10e694")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "M5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:LED_SK6812MINI")
+		(at 148.59 146.05 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a324433c-d3b0-419f-8af3-65b904f37003")
+		(property "Reference" "D55"
+			(at 134.62 154.9086 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_SK6812MINI"
+			(at 134.62 152.3686 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:LED_SK6812MINI"
+			(at 147.32 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+			(at 147.32 134.874 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 130.302 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5149201"
+			(at 134.62 149.8286 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "a1e7d539-3399-40e3-9622-856a084c6780")
+		)
+		(pin "1"
+			(uuid "7621eb11-63ca-47ef-874c-e7bb4fb345c8")
+		)
+		(pin "2"
+			(uuid "0d2aafce-3f49-427a-9a95-97f4b459d83b")
+		)
+		(pin "3"
+			(uuid "7dca1d12-d579-4bf4-8c46-ae7823e5342a")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "D55")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Diode")
+		(at 316.23 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a7bf4ed1-1852-4b04-bb6a-a2ab0f5cc894")
+		(property "Reference" "D76"
+			(at 316.23 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Diode"
+			(at 316.23 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:Diode_SOD-123"
+			(at 316.23 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 316.23 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1N4148 (DO-35) or 1N4148W (SOD-123)"
+			(at 316.23 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 316.23 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 316.23 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2afb2048-f39c-43a1-bdc3-5939f7f70446")
+		)
+		(pin "1"
+			(uuid "24f25830-c2cc-4740-8c4e-71b451705976")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "D76")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 266.7 205.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a8abf6e5-d074-494e-bb51-f06b23cc3543")
+		(property "Reference" "S25"
+			(at 266.7 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 266.7 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "JacobGable:MX_Choc_Hotswap_Hybrid"
+			(at 266.7 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 266.7 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 266.7 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a351c52e-2e7f-49e5-ae09-29519588f288")
+		)
+		(pin "2"
+			(uuid "2c257af6-c058-46a2-bb90-f3a3cc637ea2")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "S25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:LED_SK6812MINI")
+		(at 120.65 243.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b0b12cfd-f115-4594-953a-bcdec848f37b")
+		(property "Reference" "D53"
+			(at 134.62 234.9814 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_SK6812MINI"
+			(at 134.62 237.5214 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:LED_SK6812MINI"
+			(at 121.92 251.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+			(at 121.92 255.016 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 138.938 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5149201"
+			(at 134.62 240.0614 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "32ae194a-815e-4e51-9aec-5a425afce35d")
+		)
+		(pin "1"
+			(uuid "97649db4-40ff-460a-8bc6-d16c1d999597")
+		)
+		(pin "2"
+			(uuid "74647aed-2b1a-4e9f-8ae2-f6a809d2bec3")
+		)
+		(pin "3"
+			(uuid "d9fb910c-76c6-4774-9bbb-65f2de3ba5e8")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "D53")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 304.8 205.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b5b168ea-91be-40fc-a0a1-6cb1af473d1a")
+		(property "Reference" "S31"
+			(at 304.8 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 304.8 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "JacobGable:MX_Choc_Hotswap_Hybrid"
+			(at 304.8 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 304.8 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 304.8 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "509f51f4-ca70-4784-b821-32f8a2719bf8")
+		)
+		(pin "2"
+			(uuid "669bdbc6-f436-4745-9a7d-d50dcaab7e6e")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "S31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 342.9 180.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b95f2717-be6f-42c2-91cc-1dcb56c1bd01")
+		(property "Reference" "S38"
+			(at 342.9 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 342.9 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "JacobGable:MX_Choc_Hotswap_Hybrid_1.5u"
+			(at 342.9 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 342.9 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 342.9 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "99bcefd4-eaa7-4f55-b9fd-f5d8371686e0")
+		)
+		(pin "2"
+			(uuid "6cf327d2-672d-4f62-8dd4-772783e81df8")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "S38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Diode")
+		(at 278.13 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b97af5a2-2f83-456e-9534-74543b7a242e")
+		(property "Reference" "D69"
+			(at 278.13 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Diode"
+			(at 278.13 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:Diode_SOD-123"
+			(at 278.13 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 278.13 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1N4148 (DO-35) or 1N4148W (SOD-123)"
+			(at 278.13 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 278.13 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 278.13 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4560633a-182a-47f1-8dd3-da0206446865")
+		)
+		(pin "1"
+			(uuid "17433a62-5225-4b3d-a490-3e70dee96e42")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "D69")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Diode")
+		(at 297.18 152.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bb99766c-0e44-4245-9ebf-6b4dd50a3a88")
+		(property "Reference" "D75"
+			(at 297.18 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Diode"
+			(at 297.18 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:Diode_SOD-123"
+			(at 297.18 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 297.18 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1N4148 (DO-35) or 1N4148W (SOD-123)"
+			(at 297.18 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 297.18 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 297.18 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1b610450-acab-4629-804c-b46d2dd42315")
+		)
+		(pin "1"
+			(uuid "388fadeb-f05f-4938-92e7-d265ce2f2f91")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "D75")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:LED_SK6812MINI")
+		(at 148.59 213.36 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bcd56221-ec21-42f7-ae64-da3dd9a462be")
+		(property "Reference" "D57"
+			(at 134.62 222.2186 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_SK6812MINI"
+			(at 134.62 219.6786 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:LED_SK6812MINI"
+			(at 147.32 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+			(at 147.32 202.184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 130.302 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5149201"
+			(at 134.62 217.1386 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "9f24e7b2-58eb-4775-91f2-c13a31fec0ee")
+		)
+		(pin "1"
+			(uuid "f7946ce5-2fc5-4f19-8d47-40976744481f")
+		)
+		(pin "2"
+			(uuid "36b5a606-f33c-4f31-969b-3c61caf310e0")
+		)
+		(pin "3"
+			(uuid "1dec8439-f686-4d63-867a-4134045e5330")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "D57")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 266.7 231.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bfa406e7-740e-46ce-8fb2-7c24b20d3792")
+		(property "Reference" "S36"
+			(at 266.7 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 266.7 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "JacobGable:MX_Choc_Hotswap_Hybrid"
+			(at 266.7 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 266.7 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 266.7 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3ce0244b-adfe-4cfa-826e-938a4dceb1f3")
+		)
+		(pin "2"
+			(uuid "55bd70e8-d258-442e-a6d4-c07e4c5d62d3")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "S36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Diode")
+		(at 259.08 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bfbdebbe-07a6-45d2-a5eb-870e7825166d")
+		(property "Reference" "D66"
+			(at 259.08 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Diode"
+			(at 259.08 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:Diode_SOD-123"
+			(at 259.08 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 259.08 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1N4148 (DO-35) or 1N4148W (SOD-123)"
+			(at 259.08 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 259.08 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 259.08 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a89ca227-b0db-4c57-8744-022f10210067")
+		)
+		(pin "1"
+			(uuid "2b43c66c-c7a7-4e23-a153-12d692e473e4")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "D66")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Diode")
+		(at 259.08 152.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c2711cea-b986-42cf-a275-da648c317385")
+		(property "Reference" "D68"
+			(at 257.8099 149.86 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Diode"
+			(at 260.3499 149.86 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:Diode_SOD-123"
+			(at 259.08 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 259.08 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1N4148 (DO-35) or 1N4148W (SOD-123)"
+			(at 259.08 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 259.08 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 259.08 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5c195444-9633-4481-a276-e66e78cceaf5")
+		)
+		(pin "1"
+			(uuid "673186c1-2059-4ec4-8776-51fb5b3a0d86")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "D68")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 323.85 205.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c4cb611f-9270-4a52-9c54-d97f9cb11463")
+		(property "Reference" "S35"
+			(at 323.85 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 323.85 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "JacobGable:MX_Choc_Hotswap_Hybrid"
+			(at 323.85 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 323.85 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 323.85 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "125c5453-3790-4b3c-b5b6-4a808f0de595")
+		)
+		(pin "2"
+			(uuid "beb589f9-7242-4398-bcac-0b0cc31b9a82")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "S35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Diode")
+		(at 259.08 203.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c693cfe4-89d0-4156-bcdb-db6e30c6d54e")
+		(property "Reference" "D67"
+			(at 259.08 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Diode"
+			(at 259.08 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:Diode_SOD-123"
+			(at 259.08 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 259.08 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1N4148 (DO-35) or 1N4148W (SOD-123)"
+			(at 259.08 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 259.08 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 259.08 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a8700e75-befe-40a3-b653-b75159daf92e")
+		)
+		(pin "1"
+			(uuid "4bd86851-a832-45f6-b140-e661904e0165")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "D67")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:SS14")
+		(at 129.54 53.34 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ce23a7f9-63c1-457b-9757-906fd315a094")
+		(property "Reference" "D54"
+			(at 132.08 51.7524 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SS14"
+			(at 132.08 54.2924 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMA"
+			(at 125.095 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/88746/ss12.pdf"
+			(at 129.54 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "40V 1A Schottky Diode, SMA"
+			(at 129.54 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "344fd322-11c6-410a-ac7d-389e0096235a")
+		)
+		(pin "2"
+			(uuid "42544f69-669c-45bb-a6d6-ecc6d07b5872")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "D54")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Mounting_Hole")
+		(at 215.9 52.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cec17db6-b90c-4edb-8344-24172108f9d3")
+		(property "Reference" "H6"
+			(at 218.44 50.7999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Mounting_Hole"
+			(at 218.44 53.3399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4"
+			(at 215.9 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 215.9 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 215.9 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "H6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 114.3 67.31 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d3e74d0e-42e2-4822-822d-f84eef66b135")
+		(property "Reference" "R9"
+			(at 114.3 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10"
+			(at 114.3 64.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 114.3 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 114.3 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 114.3 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "379f04d7-392a-4d10-86af-647743f7805e")
+		)
+		(pin "2"
+			(uuid "0a85fcd3-e71a-4bf9-b81a-9a7bc7c86a33")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Diode")
+		(at 316.23 203.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d66f490b-2822-40ad-81af-1192c98090c8")
+		(property "Reference" "D77"
+			(at 316.23 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Diode"
+			(at 316.23 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:Diode_SOD-123"
+			(at 316.23 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 316.23 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1N4148 (DO-35) or 1N4148W (SOD-123)"
+			(at 316.23 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 316.23 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 316.23 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b9c0cf43-747a-4d83-bdf1-1c25667b4da8")
+		)
+		(pin "1"
+			(uuid "e217f558-65a6-45d9-a523-dd9938cf07e5")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "D77")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Diode")
+		(at 278.13 228.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "da2a4cb7-bb7e-47d9-9938-870f774bc0fd")
+		(property "Reference" "D82"
+			(at 278.13 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Diode"
+			(at 278.13 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:Diode_SOD-123"
+			(at 278.13 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 278.13 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1N4148 (DO-35) or 1N4148W (SOD-123)"
+			(at 278.13 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 278.13 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 278.13 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ea85455e-33d2-4a0d-9c30-a149a32ba137")
+		)
+		(pin "1"
+			(uuid "3ab913f7-60e5-43ed-b300-4d4bc28e0bda")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "D82")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 323.85 180.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "da3dcb9e-b362-4afd-bd46-fb5bc3f7acab")
+		(property "Reference" "S34"
+			(at 323.85 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 323.85 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "JacobGable:MX_Choc_Hotswap_Hybrid"
+			(at 323.85 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 323.85 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 323.85 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d33b79c2-fe44-4209-87d0-9513693555d6")
+		)
+		(pin "2"
+			(uuid "0d22acb0-0cbe-4ce6-99a1-0f571fee4f55")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "S34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 266.7 154.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dabd4512-b783-477b-9350-ed0fec602a16")
+		(property "Reference" "S26"
+			(at 265.43 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 262.89 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "JacobGable:MX_Choc_Hotswap_Hybrid"
+			(at 266.7 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 266.7 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 266.7 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "74a1c6d6-665e-4c3c-80a0-1f355157aff3")
+		)
+		(pin "2"
+			(uuid "96392308-a712-4ba7-8baa-e0cc26485b06")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "S26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 285.75 205.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dee7b536-cc70-46d8-b770-1f1a38655617")
+		(property "Reference" "S28"
+			(at 285.75 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 285.75 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "JacobGable:MX_Choc_Hotswap_Hybrid"
+			(at 285.75 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 285.75 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 285.75 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0a58c310-b457-46db-a650-28370c79f2d9")
+		)
+		(pin "2"
+			(uuid "4276f11e-cab1-4897-86a3-0e70accc9def")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "S28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:LED_SK6812MINI")
+		(at 120.65 213.36 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "df8b3fa0-dc67-4f39-933d-fe8c446a9e8a")
+		(property "Reference" "D52"
+			(at 106.68 222.2186 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_SK6812MINI"
+			(at 106.68 219.6786 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:LED_SK6812MINI"
+			(at 119.38 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+			(at 119.38 202.184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 102.362 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5149201"
+			(at 106.68 217.1386 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "396cceab-5d24-493e-80b3-1254222255f8")
+		)
+		(pin "1"
+			(uuid "658684d4-823c-453c-916b-58a2b2c50dd7")
+		)
+		(pin "2"
+			(uuid "ca949a01-99f2-4be5-84d6-3de4ae8e71d4")
+		)
+		(pin "3"
+			(uuid "d9d054d2-6e3d-4e1c-9ee8-f4e245ff3a6d")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "D52")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:LED_SK6812MINI")
+		(at 176.53 243.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dfd77b06-0a4a-440e-be82-32a5f2178375")
+		(property "Reference" "D62"
+			(at 190.5 234.9814 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_SK6812MINI"
+			(at 190.5 237.5214 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:LED_SK6812MINI"
+			(at 177.8 251.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+			(at 177.8 255.016 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 194.818 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5149201"
+			(at 190.5 240.0614 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "45d3a559-f640-4315-9d2a-ef5c7047faff")
+		)
+		(pin "1"
+			(uuid "15e3319a-3e2c-4f7c-993c-af5167aa53ea")
+		)
+		(pin "2"
+			(uuid "3d9f6ada-6cf2-447b-9d12-4c40804c28f6")
+		)
+		(pin "3"
+			(uuid "3b5d4ef4-70c3-406d-b38b-0495032c113f")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "D62")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 247.65 180.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e2098b22-b33a-402d-b1e0-0a2093176985")
+		(property "Reference" "S21"
+			(at 247.65 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 247.65 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "JacobGable:MX_Choc_Hotswap_Hybrid"
+			(at 247.65 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 247.65 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 247.65 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fc8721b7-cde2-452e-8798-cb26c7fb233d")
+		)
+		(pin "2"
+			(uuid "b45218ba-aaa4-47b2-b26a-cd426dee9148")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "S21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 323.85 154.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e7b7b654-2bcf-40d2-83fb-e8c686a12f56")
+		(property "Reference" "S37"
+			(at 322.58 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 323.85 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "JacobGable:MX_Choc_Hotswap_Hybrid"
+			(at 323.85 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 323.85 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 323.85 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2918063a-80bb-4009-abfd-155c09c9872a")
+		)
+		(pin "2"
+			(uuid "8728db1a-5fe1-4b9f-9afd-8f8563b61bc8")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "S37")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 285.75 154.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "eb09dee9-cc6d-4275-9469-4b2dbb1d1d4b")
+		(property "Reference" "S29"
+			(at 284.48 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 285.75 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "JacobGable:MX_Choc_Hotswap_Hybrid"
+			(at 285.75 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 285.75 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 285.75 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c998546a-c055-42ba-8de9-29909a656adc")
+		)
+		(pin "2"
+			(uuid "6739a96d-eae6-4f88-863c-c5d9bdf6c0bc")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "S29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 247.65 205.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eb7dda72-b774-4bb8-9b11-c91875dddf7e")
+		(property "Reference" "S22"
+			(at 247.65 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 247.65 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "JacobGable:MX_Choc_Hotswap_Hybrid"
+			(at 247.65 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 247.65 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 247.65 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ae9e4a71-55f1-4bf3-996f-fa013a28c6fa")
+		)
+		(pin "2"
+			(uuid "8f23f86f-5874-4497-89c8-65a3ac22a422")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "S22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:LED_SK6812MINI")
+		(at 176.53 146.05 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f0942cb0-503b-43ef-8c52-6ac1fbb44743")
+		(property "Reference" "D59"
+			(at 162.56 154.9086 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_SK6812MINI"
+			(at 162.56 152.3686 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ScottoKeebs_Components:LED_SK6812MINI"
+			(at 175.26 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+			(at 175.26 134.874 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 158.242 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5149201"
+			(at 162.56 149.8286 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "8839b62b-ca0a-41cb-b54f-428f7a4a36ab")
+		)
+		(pin "1"
+			(uuid "b709eec4-30d7-42ae-a3e3-a05cf99098b3")
+		)
+		(pin "2"
+			(uuid "1bdb3c98-0c3d-4aae-9a02-55339782d7aa")
+		)
+		(pin "3"
+			(uuid "f77f4d08-69a1-4f44-b57b-f463419a8ca3")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "D59")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 156.21 58.42 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f7eadb56-ba2e-487e-bd28-3eaa230ca932")
+		(property "Reference" "M8"
+			(at 158.75 60.4519 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Motor 2 -"
+			(at 158.75 62.9919 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_2.5x2.5mm"
+			(at 151.13 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 151.13 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 156.21 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c5a4e6c5-e76c-412b-817e-c90c0dc83a3b")
+		)
+		(instances
+			(project "alpha_centauri_pcb"
+				(path "/492fae09-e9ab-44d2-b8f8-8ae87165f151/ab700b36-499d-49b7-8309-af5267778fe9"
+					(reference "M8")
+					(unit 1)
+				)
+			)
+		)
+	)
+)
