@@ -7,6 +7,9 @@ pcb/production
 pcb/alpha_centauri_pcb-backups
 pcb/_autosave-alpha_centauri_pcb.kicad_prl
 pcb/fp-info-cache
+pcb/fp-lib-table
+pcb/sym-lib-table
 pcb/*_pro
 pcb/*.lck
+pcb/_autosave-*
 rgb_ctrl/target
