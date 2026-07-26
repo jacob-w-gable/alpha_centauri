@@ -1,7 +1,7 @@
 {
   "keyboard_name": "Alpha Centauri",
   "manufacturer": "jacob-w-gable",
-  "url": "",
+  "url": "https://github.com/jacob-w-gable/alpha_centauri",
   "maintainer": "jacob-w-gable",
   "usb": {
     "vid": "0xFEED",
