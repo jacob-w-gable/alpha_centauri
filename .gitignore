@@ -11,4 +11,6 @@ pcb/fp-lib-table
 pcb/sym-lib-table
 pcb/*.lck
 pcb/_autosave-*
+pcb/components/*
+!pcb/components/AlphaCentauri.pretty
 rgb_ctrl/target

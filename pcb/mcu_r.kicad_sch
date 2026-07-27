@@ -7760,7 +7760,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EVQ-P9P02W:EVQ-P9P02W"
+		(property "Footprint" "EVQ-P9P02W:EVQP2202M"
 			(at 157.48 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -8488,7 +8488,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EVQ-P9P02W:EVQ-P9P02W"
+		(property "Footprint" "EVQ-P9P02W:EVQP2202M"
 			(at 201.93 60.96 0)
 			(hide yes)
 			(show_name no)

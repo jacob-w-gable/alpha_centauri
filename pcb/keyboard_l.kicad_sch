@@ -5550,7 +5550,7 @@
 				)
 			)
 		)
-		(property "Footprint" "JacobGable:MX_Choc_Hotswap_Hybrid"
+		(property "Footprint" "AlphaCentauri:MX_Choc_Hotswap_Hybrid"
 			(at 259.08 156.21 0)
 			(hide yes)
 			(show_name no)
@@ -6890,7 +6890,7 @@
 				)
 			)
 		)
-		(property "Footprint" "JacobGable:MX_Choc_Hotswap_Hybrid"
+		(property "Footprint" "AlphaCentauri:MX_Choc_Hotswap_Hybrid"
 			(at 297.18 232.41 0)
 			(hide yes)
 			(show_name no)
@@ -7450,7 +7450,7 @@
 				)
 			)
 		)
-		(property "Footprint" "JacobGable:MX_Choc_Hotswap_Hybrid_1.5u"
+		(property "Footprint" "AlphaCentauri:MX_Choc_Hotswap_Hybrid_1.5u"
 			(at 240.03 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -7814,7 +7814,7 @@
 				)
 			)
 		)
-		(property "Footprint" "JacobGable:MX_Choc_Hotswap_Hybrid"
+		(property "Footprint" "AlphaCentauri:MX_Choc_Hotswap_Hybrid"
 			(at 240.03 207.01 0)
 			(hide yes)
 			(show_name no)
@@ -7894,7 +7894,7 @@
 				)
 			)
 		)
-		(property "Footprint" "JacobGable:MX_Choc_Hotswap_Hybrid"
+		(property "Footprint" "AlphaCentauri:MX_Choc_Hotswap_Hybrid"
 			(at 278.13 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -7973,7 +7973,7 @@
 				)
 			)
 		)
-		(property "Footprint" "JacobGable:MX_Choc_Hotswap_Hybrid"
+		(property "Footprint" "AlphaCentauri:MX_Choc_Hotswap_Hybrid"
 			(at 278.13 156.21 0)
 			(hide yes)
 			(show_name no)
@@ -8560,7 +8560,7 @@
 				)
 			)
 		)
-		(property "Footprint" "JacobGable:MX_Choc_Hotswap_Hybrid"
+		(property "Footprint" "AlphaCentauri:MX_Choc_Hotswap_Hybrid"
 			(at 297.18 156.21 0)
 			(hide yes)
 			(show_name no)
@@ -8640,7 +8640,7 @@
 				)
 			)
 		)
-		(property "Footprint" "JacobGable:MX_Choc_Hotswap_Hybrid"
+		(property "Footprint" "AlphaCentauri:MX_Choc_Hotswap_Hybrid"
 			(at 259.08 207.01 0)
 			(hide yes)
 			(show_name no)
@@ -9075,7 +9075,7 @@
 				)
 			)
 		)
-		(property "Footprint" "JacobGable:MX_Choc_Hotswap_Hybrid"
+		(property "Footprint" "AlphaCentauri:MX_Choc_Hotswap_Hybrid"
 			(at 335.28 232.41 0)
 			(hide yes)
 			(show_name no)
@@ -9155,7 +9155,7 @@
 				)
 			)
 		)
-		(property "Footprint" "JacobGable:MX_Choc_Hotswap_Hybrid"
+		(property "Footprint" "AlphaCentauri:MX_Choc_Hotswap_Hybrid"
 			(at 316.23 232.41 0)
 			(hide yes)
 			(show_name no)
@@ -9510,7 +9510,7 @@
 				)
 			)
 		)
-		(property "Footprint" "JacobGable:MX_Choc_Hotswap_Hybrid"
+		(property "Footprint" "AlphaCentauri:MX_Choc_Hotswap_Hybrid"
 			(at 316.23 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -9589,7 +9589,7 @@
 				)
 			)
 		)
-		(property "Footprint" "JacobGable:MX_Choc_Hotswap_Hybrid"
+		(property "Footprint" "AlphaCentauri:MX_Choc_Hotswap_Hybrid"
 			(at 316.23 156.21 0)
 			(hide yes)
 			(show_name no)
@@ -9751,7 +9751,7 @@
 				)
 			)
 		)
-		(property "Footprint" "JacobGable:MX_Choc_Hotswap_Hybrid"
+		(property "Footprint" "AlphaCentauri:MX_Choc_Hotswap_Hybrid"
 			(at 335.28 207.01 0)
 			(hide yes)
 			(show_name no)
@@ -10211,7 +10211,7 @@
 				)
 			)
 		)
-		(property "Footprint" "JacobGable:MX_Choc_Hotswap_Hybrid"
+		(property "Footprint" "AlphaCentauri:MX_Choc_Hotswap_Hybrid"
 			(at 297.18 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -11141,7 +11141,7 @@
 				)
 			)
 		)
-		(property "Footprint" "JacobGable:MX_Choc_Hotswap_Hybrid"
+		(property "Footprint" "AlphaCentauri:MX_Choc_Hotswap_Hybrid"
 			(at 278.13 207.01 0)
 			(hide yes)
 			(show_name no)
@@ -11221,7 +11221,7 @@
 				)
 			)
 		)
-		(property "Footprint" "JacobGable:MX_Choc_Hotswap_Hybrid"
+		(property "Footprint" "AlphaCentauri:MX_Choc_Hotswap_Hybrid"
 			(at 335.28 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -11301,7 +11301,7 @@
 				)
 			)
 		)
-		(property "Footprint" "JacobGable:MX_Choc_Hotswap_Hybrid"
+		(property "Footprint" "AlphaCentauri:MX_Choc_Hotswap_Hybrid"
 			(at 316.23 207.01 0)
 			(hide yes)
 			(show_name no)
@@ -11533,7 +11533,7 @@
 				)
 			)
 		)
-		(property "Footprint" "JacobGable:MX_Choc_Hotswap_Hybrid"
+		(property "Footprint" "AlphaCentauri:MX_Choc_Hotswap_Hybrid"
 			(at 259.08 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -11612,7 +11612,7 @@
 				)
 			)
 		)
-		(property "Footprint" "JacobGable:MX_Choc_Hotswap_Hybrid"
+		(property "Footprint" "AlphaCentauri:MX_Choc_Hotswap_Hybrid"
 			(at 335.28 156.21 0)
 			(hide yes)
 			(show_name no)
@@ -12190,7 +12190,7 @@
 				)
 			)
 		)
-		(property "Footprint" "JacobGable:MX_Choc_Hotswap_Hybrid"
+		(property "Footprint" "AlphaCentauri:MX_Choc_Hotswap_Hybrid"
 			(at 297.18 207.01 0)
 			(hide yes)
 			(show_name no)
