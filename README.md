@@ -13,6 +13,10 @@ This is a custom keyboard with a custom keymap that is specifically tailored to 
 ## Detailed Documentation
 
 - [Quickstart](https://github.com/jacob-w-gable/alpha_centauri/wiki/Quickstart)
-- [Building/Flashing the Firmware](https://github.com/jacob-w-gable/alpha_centauri/wiki/Building-and-Flashing)
-- [Design](https://github.com/jacob-w-gable/alpha_centauri/wiki/Design)
+- [Designing/Fabricating the PCB](https://github.com/jacob-w-gable/alpha_centauri/wiki/Designing-and-Fabricating-PCB)
+- TODO: PCB Assembly
+- [Building/Flashing the Firmware](https://github.com/jacob-w-gable/alpha_centauri/wiki/Building-and-Flashing-Firmware)
+- TODO: Printing the Case
+- TODO: Final Assembly
 - [Technical Layer Reference](https://github.com/jacob-w-gable/alpha_centauri/wiki/Technical-Layer-Reference)
+- [Design Philosophy](https://github.com/jacob-w-gable/alpha_centauri/wiki/Design)
